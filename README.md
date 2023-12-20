@@ -20,10 +20,10 @@ vLLM:
 To support the Trelis Research YouTube channel, you can sign up for an account with [this link](https://runpod.io?ref=jmfkcdio).
 
 Text Generation Inference (fastest):
+- [OpenChat 3.5 7B API](https://runpod.io/gsc?template=xiwn7cb3ro&ref=jmfkcdio).
 - [Mixtral Instruct API](https://runpod.io/gsc?template=1ydpo4766w&ref=jmfkcdio). Requires an A6000 or A100 or H100.
-- [Llama 70B API by TrelisResearch](https://runpod.io/gsc?template=6e9yxszwne&ref=jmfkcdio)
-- [Fine-tuned Model API by Trelis Research](https://runpod.io/gsc?template=w13qlaqn59&ref=jmfkcdio)
-- [Deepseek Coder 33B Template](https://runpod.io/gsc?template=51tpe9tqk2&ref=jmfkcdio)
+- [Llama 70B API by TrelisResearch](https://runpod.io/gsc?template=6e9yxszwne&ref=jmfkcdio).
+- [Deepseek Coder 33B Template](https://runpod.io/gsc?template=51tpe9tqk2&ref=jmfkcdio).
 
 vLLM One-click templates:
 - [Mistral 7B AWQ](https://runpod.io/gsc?template=z5n6lh4zux&ref=jmfkcdio)
