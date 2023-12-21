@@ -24,6 +24,7 @@ Text Generation Inference (fastest):
 - [Mixtral Instruct API](https://runpod.io/gsc?template=1ydpo4766w&ref=jmfkcdio). Requires an A6000 or A100 or H100.
 - [Llama 70B API by TrelisResearch](https://runpod.io/gsc?template=6e9yxszwne&ref=jmfkcdio).
 - [Deepseek Coder 33B Template](https://runpod.io/gsc?template=51tpe9tqk2&ref=jmfkcdio).
+- [Medusa Vicuna (high speed speculative decoding - mostly a glamour template because OpenChat with AWQ is better quality and faster)](https://runpod.io/gsc?template=2xpg09eenv&ref=jmfkcdio)
 
 vLLM One-click templates:
 - [Mistral 7B AWQ](https://runpod.io/gsc?template=z5n6lh4zux&ref=jmfkcdio)
