@@ -1,24 +1,5 @@
 # Use the specified base image
-FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu20.04
-
-# Set environment variables
-ENV PYTHON_VERSION=3.9.17 \
-    PYTORCH_VERSION=2.1.0 \
-    TORCHVISION_VERSION=0.15.2 \
-    TORCHAUDIO_VERSION=2.0.2 \
-    PYTORCH_DOWNLOAD_URL=https://download.pytorch.org/whl/cu118/torch_stable.html
-
-# Install Python and other necessary packages
-RUN apt-get update && apt-get install -y \
-    python${PYTHON_VERSION} \
-    python${PYTHON_VERSION}-dev \
-    python3-pip \
-    git \
-    make \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install PyTorch, torchvision, and torchaudio
-RUN pip3 install torch==${PYTORCH_VERSION}+cu118 torchvision==${TORCHVISION_VERSION}+cu118 torchaudio==${TORCHAUDIO_VERSION}+cu118 -f ${PYTORCH_DOWNLOAD_URL}
+FROM runpod/pytorch:2.1.0-py3.10-cuda11.8.0-devel-ubuntu22.04
 
 # Clone the llama.cpp repository
 RUN git clone https://github.com/ggerganov/llama.cpp
