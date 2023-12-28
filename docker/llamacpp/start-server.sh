@@ -4,6 +4,7 @@
 gguf_file_name=""
 repo_slug=""
 context_length=""
+model_dir="${MODEL_DIR:-/workspace}"  # Use the environment variable or default to /workspace
 
 # Parse named command-line arguments
 while [ "$#" -gt 0 ]; do
@@ -25,18 +26,18 @@ fi
 # Assemble the model path
 model_path="${repo_slug}/resolve/main/${gguf_file_name}"
 
-# Check if the file exists and download if it doesn't
-if [ ! -f "/llama.cpp/${gguf_file_name}" ]; then
-    wget -P /llama.cpp "https://huggingface.co/${model_path}"
+# Check if the model file exists in the model directory and download if it doesn't
+if [ ! -f "${model_dir}/${gguf_file_name}" ]; then
+    wget -P "${model_dir}" "https://huggingface.co/${repo_slug}/resolve/main/${gguf_file_name}"
 else
-    echo "${gguf_file_name} already exists!"
+    echo "${gguf_file_name} already exists in ${model_dir}"
 fi
 
 # Build the command with the -ngl flag
-command="/llama.cpp/server -m /llama.cpp/${gguf_file_name} -c ${context_length} --port 8080 --host 0.0.0.0 -ngl 64"
+command="/llama.cpp/server -m ${model_dir}/${gguf_file_name} -c ${context_length} --port 8080 --host 0.0.0.0 -ngl 64"
 
 # Execute the command in the background
-$command &
+$command
 
 # Optionally print a message indicating that the server has started
 echo "Server started..."

@@ -10,3 +10,8 @@ curl --request POST \
     --header "Content-Type: application/json" \
     --data '{"prompt": "Building a website can be done in 10 simple steps:","n_predict": 128}'
 ```
+
+## Updates required
+
+1. Save the weights to a specific location (CACHE_DIR)
+1. Allow for private gated repos
