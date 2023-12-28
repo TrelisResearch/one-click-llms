@@ -28,16 +28,19 @@ model_path="${repo_slug}/resolve/main/${gguf_file_name}"
 
 # Check if the model file exists in the model directory and download if it doesn't
 if [ ! -f "${model_dir}/${gguf_file_name}" ]; then
-    wget -P "${model_dir}" "https://huggingface.co/${repo_slug}/resolve/main/${gguf_file_name}"
+    echo "Model file not found in ${model_dir}. Downloading..."
+    wget -P "${model_dir}" "https://huggingface.co/${model_path}"
+    echo "Download completed."
 else
-    echo "${gguf_file_name} already exists in ${model_dir}"
+    echo "Model file ${gguf_file_name} already exists in ${model_dir}"
 fi
 
 # Build the command with the -ngl flag
 command="/llama.cpp/server -m ${model_dir}/${gguf_file_name} -c ${context_length} --port 8080 --host 0.0.0.0 -ngl 64"
+echo "Server command: $command"
 
-# Execute the command in the background
+# Execute the command and output directly to console
+echo "Starting server..."
 $command
 
-# Optionally print a message indicating that the server has started
-echo "Server started..."
+echo "Server process has exited or failed to start."
