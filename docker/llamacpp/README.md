@@ -12,6 +12,12 @@ curl --request POST \
 ```
 
 ## Updates required
+1. For some reason, the cuda drivers aren't being installed correctly. Unclear why this is the case.
 
-1. Save the weights to a specific location (CACHE_DIR)
-1. Allow for private gated repos
+1. Save the weights to a specific location (CACHE_DIR).
+1. Allow for private gated repos.
+
+# Next steps
+[] Deploy a simple version of Llama.cpp and add that to the ADVANCED fine-tuning setup. Then try to do some fine-tuning.
+[] Try to run the start script on a pytorch template. Try it in background and foreground. 
+[] adjust the flags: https://github.com/ggerganov/llama.cpp/issues/4666
