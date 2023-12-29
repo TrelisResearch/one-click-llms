@@ -18,15 +18,9 @@ curl --request POST \
     --data '{"prompt": "Building a website can be done in 10 simple steps:","n_predict": 128}'
 ```
 
-## Updates required
-1. For some reason, the cuda drivers aren't being installed correctly. Unclear why this is the case.
-
-1. Save the weights to a specific location (CACHE_DIR).
-1. Allow for private gated repos.
-
 # Next steps
 [] Allow for private repos
-[] Use HuggingFace for the download, in case it's quicker...
-[] Deploy a simple version of Llama.cpp and add that to the ADVANCED fine-tuning setup. Then try to do some fine-tuning.
+[] Use HuggingFace API for the download, to speed up the download.
+[] Deploy a simple version of a Llama.cpp server and add that to the ADVANCED fine-tuning setup. Then try to do some fine-tuning.
 [x] Try to run the start script on a pytorch template. Try it in background and foreground. 
 [x] adjust the flags: https://github.com/ggerganov/llama.cpp/issues/4666
