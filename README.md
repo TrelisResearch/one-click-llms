@@ -28,7 +28,11 @@ Text Generation Inference (fastest):
 
 vLLM One-click templates:
 - [Mistral 7B AWQ](https://runpod.io/gsc?template=z5n6lh4zux&ref=jmfkcdio)
-- Post a new issue if you would like other templates
+
+llama.cpp One-click templates (new, faster than TGI):
+- [Mistral 7B Instruct v0.2 8-bit]()
+
+Post a new issue if you would like other templates
 
 ## Function-calling One-Click Templates
 One-click templates for function-calling are located on the HuggingFace model cards. Check out the collection [here](https://huggingface.co/collections/Trelis/function-calling-v3-657199ecbe378693925c7915).

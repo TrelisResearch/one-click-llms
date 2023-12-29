@@ -3,6 +3,13 @@
 - start-server.sh is the script to install llama.cpp and start a server within a pytorch-cuda container.
 - Dockerfile is the full install.
 
+## Build command
+```
+docker build -t trelis/llamacpp:v2.0 -t trelis/llamacpp:latest .
+```
+
+> Replace 'trelis' with your org on docker hub
+
 ## Test curl request to runpod
 ```
 curl --request POST \
@@ -18,6 +25,8 @@ curl --request POST \
 1. Allow for private gated repos.
 
 # Next steps
+[] Allow for private repos
+[] Use HuggingFace for the download, in case it's quicker...
 [] Deploy a simple version of Llama.cpp and add that to the ADVANCED fine-tuning setup. Then try to do some fine-tuning.
-[] Try to run the start script on a pytorch template. Try it in background and foreground. 
-[] adjust the flags: https://github.com/ggerganov/llama.cpp/issues/4666
+[x] Try to run the start script on a pytorch template. Try it in background and foreground. 
+[x] adjust the flags: https://github.com/ggerganov/llama.cpp/issues/4666
