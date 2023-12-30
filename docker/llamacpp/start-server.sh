@@ -35,10 +35,11 @@ export HF_HUB_ENABLE_HF_TRANSFER=1
 download_model() {
     local repo_id="${1}"
     local file_name="${2}"
-    local token="${3:-}"
+    local token="${3:-None}"  # Set default value to None for Python
     local revision="${4:-main}"
 
-    python -c "from huggingface_hub import hf_hub_download; hf_hub_download(repo_id='${repo_id}', filename='${file_name}', revision='${revision}', token='${token}' if token else None)"
+    # Pass shell variables into Python script correctly
+    python -c "from huggingface_hub import hf_hub_download; hf_hub_download(repo_id='${repo_id}', filename='${file_name}', revision='${revision}', token=None if '${token}' == 'None' else '${token}')"
 }
 
 cd ${model_dir}
