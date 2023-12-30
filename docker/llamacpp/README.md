@@ -1,5 +1,4 @@
 # Llama.cpp Dockerfile
-
 - start-server.sh is the script to install llama.cpp and start a server within a pytorch-cuda container.
 - Dockerfile is the full install.
 
@@ -12,7 +11,7 @@ docker build -t trelis/llamacpp:v3.0 -t trelis/llamacpp:latest .
 
 ## Sample start-server command
 ```
-./start.sh --gguf-file-name mistral-7b-instruct-v0.2.Q8_0.gguf --repo-slug TheBloke/Mistral-7B-Instruct-v0.2-GGUF --context-length 2048 --np 8
+./start-server.sh --gguf-file-name mistral-7b-instruct-v0.2.Q8_0.gguf --repo-slug TheBloke/Mistral-7B-Instruct-v0.2-GGUF --context-length 2048 --np 8
 ```
 
 ## Test curl request to runpod
