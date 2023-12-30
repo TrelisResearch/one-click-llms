@@ -30,9 +30,17 @@ vLLM One-click templates:
 - [Mistral 7B AWQ](https://runpod.io/gsc?template=z5n6lh4zux&ref=jmfkcdio)
 
 llama.cpp One-click templates (new, faster than TGI):
-- [Mistral 7B Instruct v0.2 8-bit]()
+- [Mistral 7B Instruct v0.2 8-bit](https://runpod.io/gsc?template=4g0fj4rh32&ref=jmfkcdio)
 
 Post a new issue if you would like other templates
 
 ## Function-calling One-Click Templates
 One-click templates for function-calling are located on the HuggingFace model cards. Check out the collection [here](https://huggingface.co/collections/Trelis/function-calling-v3-657199ecbe378693925c7915).
+
+## Changelog
+Dec 30 2023:
+- Support gated models by adding HUGGING_FACE_HUB_TOKEN env variable.
+- Speed up downloading using HuggingFace API.
+
+Dec 29 2023:
+- Add in one-click llama.cpp server template.

@@ -25,6 +25,19 @@ if [ -z "$gguf_file_name" ] || [ -z "$repo_slug" ] || [ -z "$context_length" ]; 
     exit 1
 fi
 
+# Install Hugging Face Hub Library and enable fast transfers
+pip install huggingface_hub hf_transfer
+export HF_HUB_ENABLE_HF_TRANSFER=1
+
+# Function to download model using Hugging Face Hub API
+download_model() {
+    local repo_id="${1}"
+    local file_name="${2}"
+    local token="${3:-}"
+
+    python -c "from huggingface_hub import hf_hub_download; hf_hub_download(repo_id='${repo_id}', filename='${file_name}', token='${token}' if token else None)"
+}
+
 cd ${model_dir}
 
 # Clone the llama.cpp repository
@@ -42,7 +55,7 @@ model_path="${repo_slug}/resolve/main/${gguf_file_name}"
 # Check if the model file exists in the model directory and download if it doesn't
 if [ ! -f "${model_dir}/${gguf_file_name}" ]; then
     echo "Model file not found in ${model_dir}. Downloading..."
-    wget -P "${model_dir}" "https://huggingface.co/${model_path}"
+    download_model "${repo_slug}" "${gguf_file_name}" "${HUGGING_FACE_HUB_TOKEN}"
     echo "Download completed."
 else
     echo "Model file ${gguf_file_name} already exists in ${model_dir}"

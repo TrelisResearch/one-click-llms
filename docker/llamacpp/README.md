@@ -5,7 +5,7 @@
 
 ## Build command
 ```
-docker build -t trelis/llamacpp:v2.0 -t trelis/llamacpp:latest .
+docker build -t trelis/llamacpp:v3.0 -t trelis/llamacpp:latest .
 ```
 
 > Replace 'trelis' with your org on docker hub
@@ -19,7 +19,7 @@ curl --request POST \
 ```
 
 # Next steps
-[] Allow for private repos
+[] Allow for private repos and use of branches/revisions.
 [] Use HuggingFace API for the download, to speed up the download.
 [] Deploy a simple version of a Llama.cpp server and add that to the ADVANCED fine-tuning setup. Then try to do some fine-tuning.
 [x] Try to run the start script on a pytorch template. Try it in background and foreground. 
