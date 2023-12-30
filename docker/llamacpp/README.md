@@ -10,6 +10,11 @@ docker build -t trelis/llamacpp:v3.0 -t trelis/llamacpp:latest .
 
 > Replace 'trelis' with your org on docker hub
 
+## Sample start-server command
+```
+./start.sh --gguf-file-name mistral-7b-instruct-v0.2.Q8_0.gguf --repo-slug TheBloke/Mistral-7B-Instruct-v0.2-GGUF --context-length 2048 --np 8
+```
+
 ## Test curl request to runpod
 ```
 curl --request POST \

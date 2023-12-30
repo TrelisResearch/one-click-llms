@@ -38,8 +38,18 @@ download_model() {
     local token="${3:-None}"  # Set default value to None for Python
     local revision="${4:-main}"
 
-    # Pass shell variables into Python script correctly
-    python -c "from huggingface_hub import hf_hub_download; hf_hub_download(repo_id='${repo_id}', filename='${file_name}', revision='${revision}', token=None if '${token}' == 'None' else '${token}')"
+    # Use Hugging Face Hub API to download (or locate in cache) the file
+    python -c "
+from huggingface_hub import hf_hub_download
+from pathlib import Path
+
+# Determine if a token is provided
+token = None if '${token}' == 'None' else '${token}'
+
+# Download or find the file in the cache
+file_path = hf_hub_download(repo_id='${repo_id}', filename='${file_name}', revision='${revision}', token=token)
+print(file_path)  # Print the path for use in the Bash script
+"
 }
 
 cd ${model_dir}
@@ -59,17 +69,19 @@ model_path="${repo_slug}/resolve/${revision}/${gguf_file_name}"
 # Check if the model file exists in the model directory and download if it doesn't
 if [ ! -f "${model_dir}/${gguf_file_name}" ]; then
     echo "Model file not found in ${model_dir}. Downloading..."
-    download_model "${repo_slug}" "${gguf_file_name}" "${HUGGING_FACE_HUB_TOKEN}" "${revision}"
+    cached_file_path=$(download_model "${repo_slug}" "${gguf_file_name}" "${HUGGING_FACE_HUB_TOKEN}" "${revision}")
     echo "Download completed."
+    echo "Cached file path: $cached_file_path"
 else
     echo "Model file ${gguf_file_name} already exists in ${model_dir}"
+    cached_file_path="${model_dir}/${gguf_file_name}"
 fi
 
 # Calculate the actual context length by multiplying it with the number of parallel threads
 actual_context_length=$(($context_length * $num_parallel_threads))
 
 # Build the command with the -ngl flag
-command="./llama.cpp/server -m ${model_dir}/${gguf_file_name} -np ${num_parallel_threads} -cb -c ${actual_context_length} --port 8080 --host 0.0.0.0 -ngl 100"
+command="./llama.cpp/server -m ${cached_file_path} -np ${num_parallel_threads} -cb -c ${actual_context_length} --port 8080 --host 0.0.0.0 -ngl 100"
 echo "Server command: $command"
 
 # Execute the command and output directly to console
