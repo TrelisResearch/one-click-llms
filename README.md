@@ -16,6 +16,9 @@ vLLM:
 - [Mistral 7B v0.2 AWQ](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Mistral%207B%20v0.2%20vLLM%20API)
 - Post a new issue if you would like other templates
 
+llama.cpp One-click templates:
+- [Mistral 7B Instruct v0.2 8-bit](https://cloud.vast.ai/?ref_id=98762&template_id=bc642dfd6e4c80a1e0807725047588b8)
+
 ## Runpod One-Click Templates
 To support the Trelis Research YouTube channel, you can sign up for an account with [this link](https://runpod.io?ref=jmfkcdio).
 
@@ -29,7 +32,7 @@ Text Generation Inference (fastest):
 vLLM One-click templates:
 - [Mistral 7B AWQ](https://runpod.io/gsc?template=z5n6lh4zux&ref=jmfkcdio)
 
-llama.cpp One-click templates (new, faster than TGI):
+llama.cpp One-click templates:
 - [Mistral 7B Instruct v0.2 8-bit](https://runpod.io/gsc?template=4g0fj4rh32&ref=jmfkcdio)
 
 Post a new issue if you would like other templates
