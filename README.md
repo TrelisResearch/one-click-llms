@@ -12,7 +12,7 @@ To support the Trelis Research YouTube channel, you can sign up for an account w
 Text Generation Inference (fastest):
 - [Mistral 7B api](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Mistral%207B%20TGI%20API)
 
-vLLM (requires an A100 or H100):
+vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
 - [Mistral 7B v0.2 AWQ](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Mistral%207B%20v0.2%20vLLM%20API)
 - Post a new issue if you would like other templates
 
@@ -29,8 +29,9 @@ Text Generation Inference (fastest):
 - [Deepseek Coder 33B Template](https://runpod.io/gsc?template=51tpe9tqk2&ref=jmfkcdio).
 - [Medusa Vicuna](https://runpod.io/gsc?template=2xpg09eenv&ref=jmfkcdio) (high speed speculative decoding - mostly a glamour template because OpenChat with AWQ is better quality and faster)
 
-vLLM (requires an A100 or H100):
+vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
 - [Mistral 7B AWQ](https://runpod.io/gsc?template=z5n6lh4zux&ref=jmfkcdio)
+- [Mixtral Instruct AWQ](https://runpod.io/gsc?template=dmybzldpis&ref=jmfkcdio)
 
 llama.cpp One-click templates:
 - [Mistral 7B Instruct v0.2 8-bit](https://runpod.io/gsc?template=4g0fj4rh32&ref=jmfkcdio)
