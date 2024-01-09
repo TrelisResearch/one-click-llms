@@ -41,6 +41,10 @@ Post a new issue if you would like other templates
 One-click templates for function-calling are located on the HuggingFace model cards. Check out the collection [here](https://huggingface.co/collections/Trelis/function-calling-v3-657199ecbe378693925c7915).
 
 ## Changelog
+
+Jan 9 2023:
+- Added Mixtral Instruct AWQ TGI
+
 Dec 30 2023:
 - Support gated models by adding HUGGING_FACE_HUB_TOKEN env variable.
 - Speed up downloading using HuggingFace API.
