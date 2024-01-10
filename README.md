@@ -7,7 +7,7 @@ These one click templates allow you to quickly boot up an API for a given langua
 Advanced inferencing scripts (incl. for function calling) are available for purchase [here](https://trelis.com/enterprise-server-api-and-inference-guide/).
 
 ## Vast AI One-Click Templates
-To support the Trelis Research YouTube channel, you can sign up for an account with [this affiliate link](https://cloud.vast.ai/?ref_id=98762).
+To support the Trelis Research YouTube channel, you can sign up for an account with [this affiliate link](https://cloud.vast.ai/?ref_id=98762). Trelis is also supported by a 1-2% commission by your use of one-click templates.
 
 Text Generation Inference (fastest):
 - [Mistral 7B api](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Mistral%207B%20TGI%20API)
@@ -20,7 +20,7 @@ llama.cpp One-click templates:
 - [Mistral 7B Instruct v0.2 8-bit](https://cloud.vast.ai/?ref_id=98762&template_id=bc642dfd6e4c80a1e0807725047588b8)
 
 ## Runpod One-Click Templates
-To support the Trelis Research YouTube channel, you can sign up for an account with [this link](https://runpod.io?ref=jmfkcdio).
+To support the Trelis Research YouTube channel, you can sign up for an account with [this link](https://runpod.io?ref=jmfkcdio). Trelis is also supported by a 1-2% commission by your use of one-click templates.
 
 Text Generation Inference (fastest):
 - [OpenChat 3.5 7B API](https://runpod.io/gsc?template=xiwn7cb3ro&ref=jmfkcdio).
