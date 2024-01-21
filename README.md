@@ -30,7 +30,7 @@ Post a new issue if you would like other templates
 To support the Trelis Research YouTube channel, you can sign up for an account with [this affiliate link](https://cloud.vast.ai/?ref_id=98762). Trelis is also supported by a 1-2% commission by your use of one-click templates.
 
 Text Generation Inference (fastest):
-- [Mistral 7B api](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Mistral%207B%20TGI%20API)
+- [Mistral 7B api](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Mistral-7B%20v0.2%20vLLM%20API)
 
 vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
 - [Mistral 7B v0.2 AWQ](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Mistral%207B%20v0.2%20vLLM%20API)
