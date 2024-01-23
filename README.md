@@ -18,8 +18,8 @@ Text Generation Inference (fastest):
 - [Medusa Vicuna](https://runpod.io/gsc?template=2xpg09eenv&ref=jmfkcdio) (high speed speculative decoding - mostly a glamour template because OpenChat with AWQ is better quality and faster)
 
 vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
-- [Mistral 7B AWQ](https://runpod.io/gsc?template=z5n6lh4zux&ref=jmfkcdio)
-- [Mixtral Instruct AWQ](https://runpod.io/gsc?template=dmybzldpis&ref=jmfkcdio)
+- [Mistral Instruct 7B AWQ](https://runpod.io/gsc?template=z5n6lh4zux&ref=jmfkcdio)
+- [Mixtral Instruct 8x7B AWQ](https://runpod.io/gsc?template=dmybzldpis&ref=jmfkcdio)
 
 llama.cpp One-click templates:
 - [Mistral 7B Instruct v0.2 8-bit](https://runpod.io/gsc?template=4g0fj4rh32&ref=jmfkcdio)
