@@ -7,21 +7,23 @@ These one click templates allow you to quickly boot up an API for a given langua
 
 Advanced inferencing scripts (incl. for function calling) are available for purchase [here](https://trelis.com/enterprise-server-api-and-inference-guide/).
 
+> Note: vLLM runs into issues sometimes if the pod template does not have the correct CUDA drivers. Unfortunately there is know way to know when picking a GPU. An issue has been raised [here](https://github.com/vllm-project/vllm/issues/2393). As an alternative, you can run TGI (and even query in openai style, guide [here](https://github.com/huggingface/text-generation-inference/commit/0eabc83541225979209ff7183b4b4442e47adf92#diff-5b4ec6c8005e6b142ac974571bb8dc557a9bb7ab7c3d0b09554dfc9cc50dcf0b)). TGI is faster than vLLM and recommended in general.
+
 ## Runpod One-Click Templates
 To support the Trelis Research YouTube channel, you can sign up for an account with [this link](https://runpod.io?ref=jmfkcdio). Trelis is also supported by a 1-2% commission by your use of one-click templates.
 
-Text Generation Inference (fastest):
+### Text Generation Inference (fastest):
 - [OpenChat 3.5 7B AWQ API - RECOMMENDED](https://runpod.io/gsc?template=8me7ywyjrb&ref=jmfkcdio), [OpenChat 3.5 7B bf16 - TGI API - lowest perplexity](https://runpod.io/gsc?template=xiwn7cb3ro&ref=jmfkcdio)
 - [Mixtral Instruct API 4bit AWQ - RECOMMENDED](https://runpod.io/gsc?template=546m57v73a&ref=jmfkcdio), [Mixtral Instruct API 8bit eetq, pod needs to be restarted multiple times to download all weights](https://runpod.io/gsc?template=1ydpo4766w&ref=jmfkcdio). Requires an A6000 or A100 or H100.
 - [Llama 70B API by TrelisResearch](https://runpod.io/gsc?template=6e9yxszwne&ref=jmfkcdio).
 - [Deepseek Coder 33B Template](https://runpod.io/gsc?template=51tpe9tqk2&ref=jmfkcdio).
 - [Medusa Vicuna](https://runpod.io/gsc?template=2xpg09eenv&ref=jmfkcdio) (high speed speculative decoding - mostly a glamour template because OpenChat with AWQ is better quality and faster)
 
-vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
+### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
 - [Mistral Instruct 7B AWQ](https://runpod.io/gsc?template=z5n6lh4zux&ref=jmfkcdio)
 - [Mixtral Instruct 8x7B AWQ](https://runpod.io/gsc?template=dmybzldpis&ref=jmfkcdio)
 
-llama.cpp One-click templates:
+### llama.cpp One-click templates:
 - [Mistral 7B Instruct v0.2 8-bit](https://runpod.io/gsc?template=4g0fj4rh32&ref=jmfkcdio)
 
 Post a new issue if you would like other templates
@@ -29,14 +31,14 @@ Post a new issue if you would like other templates
 ## Vast AI One-Click Templates
 To support the Trelis Research YouTube channel, you can sign up for an account with [this affiliate link](https://cloud.vast.ai/?ref_id=98762). Trelis is also supported by a 1-2% commission by your use of one-click templates.
 
-Text Generation Inference (fastest):
+### Text Generation Inference (fastest):
 - [Mistral 7B api](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Mistral-7B%20v0.2%20vLLM%20API)
 
-vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
+### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
 - [Mistral 7B v0.2 AWQ](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Mistral%207B%20v0.2%20vLLM%20API)
 - Post a new issue if you would like other templates
 
-llama.cpp One-click templates:
+### llama.cpp One-click templates:
 - [Mistral 7B Instruct v0.2 8-bit](https://cloud.vast.ai/?ref_id=98762&template_id=bc642dfd6e4c80a1e0807725047588b8)
 
 ## Function-calling One-Click Templates
