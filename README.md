@@ -15,6 +15,7 @@ To support the Trelis Research YouTube channel, you can sign up for an account w
 ### Text Generation Inference (fastest):
 - [OpenChat 3.5 7B AWQ API - RECOMMENDED](https://runpod.io/gsc?template=8me7ywyjrb&ref=jmfkcdio), [OpenChat 3.5 7B bf16 - TGI API - lowest perplexity](https://runpod.io/gsc?template=xiwn7cb3ro&ref=jmfkcdio)
 - [Mixtral Instruct API 4bit AWQ - RECOMMENDED](https://runpod.io/gsc?template=546m57v73a&ref=jmfkcdio), [Mixtral Instruct API 8bit eetq, pod needs to be restarted multiple times to download all weights](https://runpod.io/gsc?template=1ydpo4766w&ref=jmfkcdio). Requires an A6000 or A100 or H100.
+- [Notux 8x7B AWQ](https://runpod.io/gsc?template=qyhee1k9wx&ref=jmfkcdio) Requires an A6000 or A100 or H100.
 - [Llama 70B API by TrelisResearch](https://runpod.io/gsc?template=6e9yxszwne&ref=jmfkcdio).
 - [Deepseek Coder 33B Template](https://runpod.io/gsc?template=51tpe9tqk2&ref=jmfkcdio).
 - [Medusa Vicuna](https://runpod.io/gsc?template=2xpg09eenv&ref=jmfkcdio) (high speed speculative decoding - mostly a glamour template because OpenChat with AWQ is better quality and faster)
