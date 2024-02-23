@@ -27,6 +27,7 @@ Note: The vLLM image has compatibility issues with certain CUDA drivers, leading
 
 - [Mistral Instruct 7B AWQ](https://runpod.io/gsc?template=z5n6lh4zux&ref=jmfkcdio)
 - [Mixtral Instruct 8x7B AWQ](https://runpod.io/gsc?template=dmybzldpis&ref=jmfkcdio)
+- [Qwen1.5 Chat 72B AWQ](https://runpod.io/console/gpu-cloud?template=ju7oo9mf5w&ref=jmfkcdio). Needs to be run on an A100 or H100. The 48 GB of VRAM on an A6000 is insufficient.
 - [CodeLlama 70B Instruct - 4bit AWQ](https://runpod.io/gsc?template=tpqmplhj2a&ref=jmfkcdio). Requires an A6000 or A100 or H100.
 
 ### llama.cpp One-click templates:
