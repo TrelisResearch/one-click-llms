@@ -12,6 +12,9 @@ Advanced inferencing scripts (incl. for function calling) are available for purc
 ## Runpod One-Click Templates
 To support the Trelis Research YouTube channel, you can sign up for an account with [this link](https://runpod.io?ref=jmfkcdio). Trelis is also supported by a 1-2% commission by your use of one-click templates.
 
+### Fine-tuning Notebook Setup
+- CUDA 12.1 one-click template [here](https://runpod.io/gsc?template=ifyqsvjlzj&ref=jmfkcdio)
+
 ### Text Generation Inference (fastest):
 - [OpenChat 3.5 7B AWQ API - RECOMMENDED](https://runpod.io/gsc?template=8me7ywyjrb&ref=jmfkcdio), [OpenChat 3.5 7B bf16 - TGI API - lowest perplexity](https://runpod.io/gsc?template=xiwn7cb3ro&ref=jmfkcdio)
 - [Mixtral Instruct API 4bit AWQ - RECOMMENDED](https://runpod.io/gsc?template=546m57v73a&ref=jmfkcdio), [Mixtral Instruct API 8bit eetq, pod needs to be restarted multiple times to download all weights](https://runpod.io/gsc?template=1ydpo4766w&ref=jmfkcdio). Requires an A6000 or A100 or H100.
@@ -37,6 +40,9 @@ Post a new issue if you would like other templates
 
 ## Vast AI One-Click Templates
 To support the Trelis Research YouTube channel, you can sign up for an account with [this affiliate link](https://cloud.vast.ai/?ref_id=98762). Trelis is also supported by a 1-2% commission by your use of one-click templates.
+
+### Fine-tuning Notebook Setup
+- CUDA 12.1 one-click template [here](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Fine-tuning%20Notebook%20by%20Trelis%20-%20Cuda%2012.1).
 
 ### Text Generation Inference (fastest):
 - [Mistral 7B api](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Mistral-7B%20v0.2%20vLLM%20API)
