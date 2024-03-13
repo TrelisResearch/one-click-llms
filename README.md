@@ -18,6 +18,7 @@ To support the Trelis Research YouTube channel, you can sign up for an account w
 ### Text Generation Inference (fastest):
 - [OpenChat 3.5 7B AWQ API - RECOMMENDED](https://runpod.io/gsc?template=8me7ywyjrb&ref=jmfkcdio), [OpenChat 3.5 7B bf16 - TGI API - lowest perplexity](https://runpod.io/gsc?template=xiwn7cb3ro&ref=jmfkcdio)
 - [Mixtral Instruct API 4bit AWQ - RECOMMENDED](https://runpod.io/gsc?template=546m57v73a&ref=jmfkcdio), [Mixtral Instruct API 8bit eetq, pod needs to be restarted multiple times to download all weights](https://runpod.io/gsc?template=1ydpo4766w&ref=jmfkcdio). Requires an A6000 or A100 or H100.
+- [Smaug 34B Chat (a Yi fine-tune) - fits in bf16 on an A100. BEWARE that guardrails are weaker on this model than Yi. As such, it may be best suited for structured generation](https://runpod.io/console/gpu-cloud?template=4urlqq7olr&ref=jmfkcdio)
 - [Yi 34B Chat - fits in 16-bit on an A100](https://runpod.io/console/gpu-cloud?template=hd35vhie4f&ref=jmfkcdio)
 - [Gemma Chat 9B](https://runpod.io/console/gpu-cloud?template=ivkssv2y93&ref=jmfkcdio).
 - [Notux 8x7B AWQ](https://runpod.io/gsc?template=qyhee1k9wx&ref=jmfkcdio). Requires an A6000 or A100 or H100.
