@@ -19,7 +19,7 @@ To support the Trelis Research YouTube channel, you can sign up for an account w
 - [Moondream2 - a small but accurate model for querying images](https://runpod.io/console/deploy?template=0m232edqmj&ref=jmfkcdio)
 
 ### Text Generation Inference (fastest):
-- [IDEFICS 8B multi-modal](https://runpod.io/console/deploy?template=d2tjii83ba&ref=jmfkcdio)
+- [IDEFICS 2 8B multi-modal](https://runpod.io/console/deploy?template=d2tjii83ba&ref=jmfkcdio)
 - [Llama 3 - 8B Instruct](https://runpod.io/console/deploy?template=qlkldvr7ys&ref=jmfkcdio)
 - [Llama 3 - 70B Instruct](https://runpod.io/console/deploy?template=qlkldvr7ys&ref=jmfkcdio)
 - [OpenChat 3.5 7B AWQ API - RECOMMENDED](https://runpod.io/gsc?template=8me7ywyjrb&ref=jmfkcdio), [OpenChat 3.5 7B bf16 - TGI API - lowest perplexity](https://runpod.io/gsc?template=xiwn7cb3ro&ref=jmfkcdio)
