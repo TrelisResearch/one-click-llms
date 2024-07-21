@@ -18,7 +18,18 @@ To support the Trelis Research YouTube channel, you can sign up for an account w
 ### MoonDream Multi-modal API (openai-ish)
 - [Moondream2 - a small but accurate model for querying images](https://runpod.io/console/deploy?template=0m232edqmj&ref=jmfkcdio)
 
-### Text Generation Inference (fastest):
+### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
+Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, leading to issues on certain pods. A6000 Ada is typically an option that works.
+
+- [Mistral Nemo Instruct -pending Docker image update](https://runpod.io/console/deploy?template=hf0z5wads4&ref=jmfkcdio)
+- [Llama 3 8B Instruct](https://runpod.io/console/deploy?template=4qmr18da9x&ref=jmfkcdio)
+- [Llama 3 70B Instruct](https://runpod.io/console/deploy?template=6e9yxszwne&ref=jmfkcdio)
+- [Mistral Instruct 7B AWQ](https://runpod.io/gsc?template=z5n6lh4zux&ref=jmfkcdio)
+- [Mixtral Instruct 8x7B AWQ](https://runpod.io/gsc?template=dmybzldpis&ref=jmfkcdio)
+- [Qwen1.5 Chat 72B AWQ](https://runpod.io/console/gpu-cloud?template=ju7oo9mf5w&ref=jmfkcdio). Needs to be run on an A100 or H100. The 48 GB of VRAM on an A6000 is insufficient.
+- [CodeLlama 70B Instruct - 4bit AWQ](https://runpod.io/gsc?template=tpqmplhj2a&ref=jmfkcdio). Requires an A6000 or A100 or H100.
+
+### Text Generation Inference:
 - [IDEFICS 2 8B multi-modal](https://runpod.io/console/deploy?template=d2tjii83ba&ref=jmfkcdio)
 - [Llama 3 - 8B Instruct](https://runpod.io/console/deploy?template=qlkldvr7ys&ref=jmfkcdio)
 - [Llama 3 - 70B Instruct](https://runpod.io/console/deploy?template=qlkldvr7ys&ref=jmfkcdio)
@@ -37,17 +48,8 @@ To support the Trelis Research YouTube channel, you can sign up for an account w
 - [Deepseek Coder 33B Template](https://runpod.io/gsc?template=51tpe9tqk2&ref=jmfkcdio).
 - [Medusa Vicuna](https://runpod.io/gsc?template=2xpg09eenv&ref=jmfkcdio) (high speed speculative decoding - mostly a glamour template because OpenChat with AWQ is better quality and faster)
 
-### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
-Note: The vLLM image has compatibility issues with certain CUDA drivers, leading to issues on certain pods. A6000 Ada is typically an option that works.
-
-- [Llama 3 8B Instruct](https://runpod.io/console/deploy?template=4qmr18da9x&ref=jmfkcdio)
-- [Llama 3 70B Instruct](https://runpod.io/console/deploy?template=6e9yxszwne&ref=jmfkcdio)
-- [Mistral Instruct 7B AWQ](https://runpod.io/gsc?template=z5n6lh4zux&ref=jmfkcdio)
-- [Mixtral Instruct 8x7B AWQ](https://runpod.io/gsc?template=dmybzldpis&ref=jmfkcdio)
-- [Qwen1.5 Chat 72B AWQ](https://runpod.io/console/gpu-cloud?template=ju7oo9mf5w&ref=jmfkcdio). Needs to be run on an A100 or H100. The 48 GB of VRAM on an A6000 is insufficient.
-- [CodeLlama 70B Instruct - 4bit AWQ](https://runpod.io/gsc?template=tpqmplhj2a&ref=jmfkcdio). Requires an A6000 or A100 or H100.
-
 ### llama.cpp One-click templates:
+- [Mistral Nemo Instruct - pending llama cpp support](https://runpod.io/console/deploy?template=dmefdk27fl&ref=jmfkcdio)
 - [Mistral 7B Instruct v0.2 8-bit](https://runpod.io/gsc?template=4g0fj4rh32&ref=jmfkcdio)
 
 Post a new issue if you would like other templates

@@ -59,12 +59,12 @@ git clone https://github.com/ggerganov/llama.cpp
 
 # Change directory to llama.cpp and build the project with make
 cd llama.cpp
-make LLAMA_CUBLAS=1
+make -j 16 GGML_CUDA=1
 
 cd ../
 
 # Assemble the model path
-model_path="${repo_slug}/resolve/${revision}/${gguf_file_name}"
+model_path="${repo_slug}/resolve/${revision}/${gguf_file_name}?download=true"
 
 # Check if the model file exists in the model directory and download if it doesn't
 if [ ! -f "${model_dir}/${gguf_file_name}" ]; then
@@ -81,7 +81,7 @@ fi
 actual_context_length=$(($context_length * $num_parallel_threads))
 
 # Build the command with the -ngl flag
-command="./llama.cpp/server -m ${cached_file_path} -np ${num_parallel_threads} -cb -c ${actual_context_length} --port 8080 --host 0.0.0.0 -ngl 100"
+command="./llama.cpp/llama-server -m ${cached_file_path} -np ${num_parallel_threads} -cb -c ${actual_context_length} --port 8080 --host 0.0.0.0 -ngl 100"
 echo "Server command: $command"
 
 # Execute the command and output directly to console
