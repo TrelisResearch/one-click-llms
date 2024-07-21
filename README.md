@@ -74,6 +74,8 @@ To support the Trelis Research YouTube channel, you can sign up for an account w
 One-click templates for function-calling are located on the HuggingFace model cards. Check out the collection [here](https://huggingface.co/collections/Trelis/function-calling-v3-657199ecbe378693925c7915).
 
 ## Changelog
+20Jul2023:
+- Update the ./llama-server.sh command in line with breaking changes to llama.cpp
 
 Feb 16 2023:
 - Added a Mamba one click template.
