@@ -1,13 +1,15 @@
 # one-click-llms
+> [!TIP]
+> Post a new issue if you would like other templates.
+
+> [!TIP]
+> Advanced inferencing scripts (incl. for function calling, data extraction, advanced RAG methods, and private data redaction) are available for purchase [here](https://trelis.com/enterprise-server-api-and-inference-guide/).
+
 These one click templates allow you to quickly boot up an API for a given language model.
 
-- Make sure to read through the README file on the templates!
+- Read through the README file on the templates!
 - Runpod is recommended (better user interface) if using larger GPUs like A6000, A100 or H100.
 - Vast.AI is recommended for lowest cost per hour with smaller GPUs like A4000 and A2000. However, the user experience is significantly worse with Vast.AI than runpod.
-
-Advanced inferencing scripts (incl. for function calling) are available for purchase [here](https://trelis.com/enterprise-server-api-and-inference-guide/).
-
-> Note: vLLM runs into issues sometimes if the pod template does not have the correct CUDA drivers. Unfortunately there is no way to know when picking a GPU. An issue has been raised [here](https://github.com/vllm-project/vllm/issues/2393). As an alternative, you can run TGI (and even query in openai style, guide [here](https://github.com/huggingface/text-generation-inference/commit/0eabc83541225979209ff7183b4b4442e47adf92#diff-5b4ec6c8005e6b142ac974571bb8dc557a9bb7ab7c3d0b09554dfc9cc50dcf0b)). TGI is faster than vLLM and recommended in general. Note however, that TGI does not automatically apply the chat template to the prompt when using the OpenAI style endpoint.
 
 ## Runpod One-Click Templates
 To support the Trelis Research YouTube channel, you can sign up for an account with [this link](https://runpod.io?ref=jmfkcdio). Trelis is also supported by a 1-2% commission by your use of one-click templates.
@@ -15,12 +17,9 @@ To support the Trelis Research YouTube channel, you can sign up for an account w
 ### Fine-tuning Notebook Setup
 - CUDA 12.1 one-click template [here](https://runpod.io/gsc?template=ifyqsvjlzj&ref=jmfkcdio)
 
-### MoonDream Multi-modal API (openai-ish)
-- [Moondream2 - a small but accurate model for querying images](https://runpod.io/console/deploy?template=0m232edqmj&ref=jmfkcdio)
-
 ### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
 Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, leading to issues on certain pods. A6000 Ada is typically an option that works.
-- [Phi 3 Mini](https://runpod.io/console/deploy?template=l0rcxaaqlj&ref=jmfkcdio)
+- [Phi 3 Mini](https://runpod.io/console/deploy?template=l0rcxaaqlj&ref=jmfkcdio), [Phi 3 Small](https://runpod.io/console/deploy?template=l0rcxaaqlj&ref=jmfkcdio), [Phi 3 Medium](https://runpod.io/console/deploy?template=c5937jor68&ref=jmfkcdio)
 - [Mistral Nemo Instruct -pending Docker image update](https://runpod.io/console/deploy?template=hf0z5wads4&ref=jmfkcdio)
 - [Llama 3 8B Instruct](https://runpod.io/console/deploy?template=4qmr18da9x&ref=jmfkcdio)
 - [Llama 3 70B Instruct](https://runpod.io/console/deploy?template=6e9yxszwne&ref=jmfkcdio)
@@ -28,6 +27,9 @@ Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, 
 - [Mixtral Instruct 8x7B AWQ](https://runpod.io/gsc?template=dmybzldpis&ref=jmfkcdio)
 - [Qwen1.5 Chat 72B AWQ](https://runpod.io/console/gpu-cloud?template=ju7oo9mf5w&ref=jmfkcdio). Needs to be run on an A100 or H100. The 48 GB of VRAM on an A6000 is insufficient.
 - [CodeLlama 70B Instruct - 4bit AWQ](https://runpod.io/gsc?template=tpqmplhj2a&ref=jmfkcdio). Requires an A6000 or A100 or H100.
+
+> [!IMPORTANT]
+> Note: vLLM runs into issues sometimes if the pod template does not have the correct CUDA drivers. Unfortunately there is no way to know when picking a GPU. An issue has been raised [here](https://github.com/vllm-project/vllm/issues/2393). As an alternative, you can run TGI (and even query in openai style, guide [here](https://github.com/huggingface/text-generation-inference/commit/0eabc83541225979209ff7183b4b4442e47adf92#diff-5b4ec6c8005e6b142ac974571bb8dc557a9bb7ab7c3d0b09554dfc9cc50dcf0b)). TGI is faster than vLLM and recommended in general. Note however, that TGI does not automatically apply the chat template to the prompt when using the OpenAI style endpoint.
 
 ### Text Generation Inference:
 - [IDEFICS 2 8B multi-modal](https://runpod.io/console/deploy?template=d2tjii83ba&ref=jmfkcdio)
@@ -52,7 +54,8 @@ Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, 
 - [Mistral Nemo Instruct - pending llama cpp support](https://runpod.io/console/deploy?template=dmefdk27fl&ref=jmfkcdio)
 - [Mistral 7B Instruct v0.2 8-bit](https://runpod.io/gsc?template=4g0fj4rh32&ref=jmfkcdio)
 
-Post a new issue if you would like other templates
+### MoonDream Multi-modal API (openai-ish)
+- [Moondream2 - a small but accurate model for querying images](https://runpod.io/console/deploy?template=0m232edqmj&ref=jmfkcdio)
 
 ## Vast AI One-Click Templates
 To support the Trelis Research YouTube channel, you can sign up for an account with [this affiliate link](https://cloud.vast.ai/?ref_id=98762). Trelis is also supported by a 1-2% commission by your use of one-click templates.
@@ -73,7 +76,10 @@ To support the Trelis Research YouTube channel, you can sign up for an account w
 ## Function-calling One-Click Templates
 One-click templates for function-calling are located on the HuggingFace model cards. Check out the collection [here](https://huggingface.co/collections/Trelis/function-calling-v3-657199ecbe378693925c7915).
 
-## Changelog
+> [!TIP]
+> As of July 23rd 2024, function calling fine-tuned models are being deprecated in favour of a one-shot approach with stronger models. Find the "Tool Use" video on the [Trelis YouTube Channel](https://youtube.com/@trelisresearch/) for more info.
+
+## Changelog
 20Jul2023:
 - Update the ./llama-server.sh command in line with breaking changes to llama.cpp
 
