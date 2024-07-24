@@ -18,7 +18,7 @@ These one click templates allow you to quickly boot up an API for a given langua
 ### GPU Choices and Tips
 For best reliability around CUDA versions, I recommend:
 - A6000 (48 GB VRAM)
-- A100 SXM (more expensive than PCI but more reliable) - more reliable than A6000 if using FP8 models
+- A100 SXM (more expensive than PCI but more reliably has up to date CUDA)
 - H100 PCI or SXM - best for fp8 models, but expensive.
 
 ### Fine-tuning Notebook Setup
