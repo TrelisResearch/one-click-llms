@@ -12,7 +12,8 @@ These one click templates allow you to quickly boot up an API for a given langua
 - Vast.AI is recommended for lowest cost per hour with smaller GPUs like A4000 and A2000. However, the user experience is significantly worse with Vast.AI than runpod.
 
 ## Runpod One-Click Templates
-To support the Trelis Research YouTube channel, you can sign up for an account with [this link](https://runpod.io?ref=jmfkcdio). Trelis is also supported by a 1-2% commission by your use of one-click templates.
+> [!TIP]
+> To support the Trelis Research YouTube channel, you can sign up for an account with [this link](https://runpod.io?ref=jmfkcdio). Trelis is supported by a commission when you use one-click templates.
 
 ### Fine-tuning Notebook Setup
 - CUDA 12.1 one-click template [here](https://runpod.io/gsc?template=ifyqsvjlzj&ref=jmfkcdio)
@@ -58,7 +59,8 @@ Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, 
 - [Moondream2 - a small but accurate model for querying images](https://runpod.io/console/deploy?template=0m232edqmj&ref=jmfkcdio)
 
 ## Vast AI One-Click Templates
-To support the Trelis Research YouTube channel, you can sign up for an account with [this affiliate link](https://cloud.vast.ai/?ref_id=98762). Trelis is also supported by a 1-2% commission by your use of one-click templates.
+> [!TIP]
+> To support the Trelis Research YouTube channel, you can sign up for an account with [this affiliate link](https://cloud.vast.ai/?ref_id=98762). Trelis is supported by a commission when you use one-click templates.
 
 ### Fine-tuning Notebook Setup
 - CUDA 12.1 one-click template [here](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Fine-tuning%20Notebook%20by%20Trelis%20-%20Cuda%2012.1).
