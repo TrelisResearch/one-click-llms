@@ -9,17 +9,24 @@ These one click templates allow you to quickly boot up an API for a given langua
 
 - Read through the README file on the templates!
 - Runpod is recommended (better user interface) if using larger GPUs like A6000, A100 or H100.
-- Vast.AI is recommended for lowest cost per hour with smaller GPUs like A4000 and A2000. However, the user experience is significantly worse with Vast.AI than runpod.
+- Vast.AI is recommended for lowest cost per hour with smaller GPUs like A600000 and A2000. However, the user experience is significantly worse with Vast.AI than runpod.
 
 ## Runpod One-Click Templates
 > [!TIP]
 > To support the Trelis Research YouTube channel, you can sign up for an account with [this link](https://runpod.io?ref=jmfkcdio). Trelis is supported by a commission when you use one-click templates.
+
+### GPU Choices and Tips
+For best reliability around CUDA versions, I recommend:
+- A6000 (48 GB VRAM)
+- A100 SXM (more expensive than PCI but more reliable) - more reliable than A6000 if using FP8 models
+- H100 PCI or SXM - best for fp8 models, but expensive.
 
 ### Fine-tuning Notebook Setup
 - CUDA 12.1 one-click template [here](https://runpod.io/gsc?template=ifyqsvjlzj&ref=jmfkcdio)
 
 ### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
 Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, leading to issues on certain pods. A6000 Ada is typically an option that works.
+- [Llama 3.1 Instruct 8B](https://runpod.io/console/deploy?template=vfu808ard7&ref=jmfkcdio), [Llama 3.1 Instruct 70B](https://runpod.io/console/deploy?template=rb69yhtpep&ref=jmfkcdio), [Llama 3.1 Instruct FP8 405B](https://runpod.io/console/deploy?template=h3a6ufgwjv&ref=jmfkcdio), [Llama 3.1 Instruct INT4 405B](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio)
 - [Phi 3 Mini](https://runpod.io/console/deploy?template=l0rcxaaqlj&ref=jmfkcdio), [Phi 3 Small](https://runpod.io/console/deploy?template=l0rcxaaqlj&ref=jmfkcdio), [Phi 3 Medium](https://runpod.io/console/deploy?template=c5937jor68&ref=jmfkcdio)
 - [Mistral Nemo Instruct -pending Docker image update](https://runpod.io/console/deploy?template=hf0z5wads4&ref=jmfkcdio)
 - [Llama 3 8B Instruct](https://runpod.io/console/deploy?template=4qmr18da9x&ref=jmfkcdio)
@@ -41,7 +48,7 @@ Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, 
 - [Zephyr 141B - a Mixtral 8x22B fine-tune](https://runpod.io/console/deploy?template=0896yqcr0f&ref=jmfkcdio)
 - [DRBX Instruct](https://runpod.io/console/gpu-cloud?template=tlt1i1welu&ref=jmfkcdio)
 - [Smaug 34B Chat (a Yi fine-tune) - fits in bf16 on an A100. BEWARE that guardrails are weaker on this model than Yi. As such, it may be best suited for structured generation](https://runpod.io/console/gpu-cloud?template=4urlqq7olr&ref=jmfkcdio)
-- [TowerInstruct 13B (multi-lingual Llama 2 fine-tune)](https://runpod.io/console/gpu-cloud?template=xwduaad0fr&ref=jmfkcdio) - needs ~30 GB to run in bf16 (fits on an A6000). Add `--quantize eetq` to run with under 15 GB of VRAM (e.g. A4000).
+- [TowerInstruct 13B (multi-lingual Llama 2 fine-tune)](https://runpod.io/console/gpu-cloud?template=xwduaad0fr&ref=jmfkcdio) - needs ~30 GB to run in bf16 (fits on an A6000). Add `--quantize eetq` to run with under 15 GB of VRAM (e.g. A600000).
 - [Yi 34B Chat - fits in 16-bit on an A100](https://runpod.io/console/gpu-cloud?template=hd35vhie4f&ref=jmfkcdio)
 - [Gemma Chat 9B](https://runpod.io/console/gpu-cloud?template=ivkssv2y93&ref=jmfkcdio).
 - [Notux 8x7B AWQ](https://runpod.io/gsc?template=qyhee1k9wx&ref=jmfkcdio). Requires an A6000 or A100 or H100.
