@@ -28,7 +28,7 @@ For best reliability around CUDA versions, I recommend:
 Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, leading to issues on certain pods. A6000 Ada is typically an option that works.
 - [Llama 3.1 Instruct 8B](https://runpod.io/console/deploy?template=vfu808ard7&ref=jmfkcdio), [Llama 3.1 Instruct 70B](https://runpod.io/console/deploy?template=rb69yhtpep&ref=jmfkcdio), [Llama 3.1 Instruct FP8 405B](https://runpod.io/console/deploy?template=h3a6ufgwjv&ref=jmfkcdio), [Llama 3.1 Instruct INT4 405B](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio)
 - [Phi 3 Mini](https://runpod.io/console/deploy?template=l0rcxaaqlj&ref=jmfkcdio), [Phi 3 Small](https://runpod.io/console/deploy?template=l0rcxaaqlj&ref=jmfkcdio), [Phi 3 Medium](https://runpod.io/console/deploy?template=c5937jor68&ref=jmfkcdio)
-- [Mistral Nemo Instruct -pending Docker image update](https://runpod.io/console/deploy?template=hf0z5wads4&ref=jmfkcdio)
+- [Mistral Nemo Instruct (fp8)](https://runpod.io/console/deploy?template=hf0z5wads4&ref=jmfkcdio)
 - [Llama 3 8B Instruct](https://runpod.io/console/deploy?template=4qmr18da9x&ref=jmfkcdio)
 - [Llama 3 70B Instruct](https://runpod.io/console/deploy?template=6e9yxszwne&ref=jmfkcdio)
 - [Mistral Instruct 7B AWQ](https://runpod.io/gsc?template=z5n6lh4zux&ref=jmfkcdio)
