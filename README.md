@@ -17,12 +17,21 @@ These one click templates allow you to quickly boot up an API for a given langua
 
 ### GPU Choices and Tips
 For best reliability around CUDA versions, I recommend:
-- A6000 (48 GB VRAM)
-- A100 SXM (more expensive than PCI but more reliably has up to date CUDA)
+- A6000 (48 GB VRAM), cheapest.
+- A100 SXM (more expensive than PCI but more reliably has up to date CUDA).
 - H100 PCI or SXM - best for fp8 models, but expensive.
 
 ### Fine-tuning Notebook Setup
 - CUDA 12.1 one-click template [here](https://runpod.io/gsc?template=ifyqsvjlzj&ref=jmfkcdio)
+
+### Inference Engines (vLLM, TGI, Nvidia NIM or SGLang)
+- SGLang is the fastest across all batch sizes.
+- Nvidia NIM (paid service from Nvidia) is a bit slower than SGLang.
+- vLLM and TGI are close on speed for small batches.
+- All offer openai style endpoints.
+
+### SGLang (from lmsys)
+- [Llama 3.1 Instruct 8B](https://runpod.io/console/deploy?template=egumitbrf3&ref=jmfkcdio), [Llama 3.1 Instruct 70B](https://runpod.io/console/deploy?template=s51eiwrmif&ref=jmfkcdio), [Llama 3.1 Instruct FP8 405B](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio)
 
 ### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
 Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, leading to issues on certain pods. A6000 Ada is typically an option that works.
