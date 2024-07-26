@@ -9,7 +9,7 @@ These one click templates allow you to quickly boot up an API for a given langua
 
 - Read through the README file on the templates!
 - Runpod is recommended (better user interface) if using larger GPUs like A6000, A100 or H100.
-- Vast.AI is recommended for lowest cost per hour with smaller GPUs like A600000 and A2000. However, the user experience is significantly worse with Vast.AI than runpod.
+- Vast.AI is recommended for lowest cost per hour with smaller GPUs like A6000 and A2000. However, the user experience is significantly worse with Vast.AI than runpod.
 
 ## Runpod One-Click Templates
 > [!TIP]
@@ -57,7 +57,7 @@ Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, 
 - [Zephyr 141B - a Mixtral 8x22B fine-tune](https://runpod.io/console/deploy?template=0896yqcr0f&ref=jmfkcdio)
 - [DRBX Instruct](https://runpod.io/console/gpu-cloud?template=tlt1i1welu&ref=jmfkcdio)
 - [Smaug 34B Chat (a Yi fine-tune) - fits in bf16 on an A100. BEWARE that guardrails are weaker on this model than Yi. As such, it may be best suited for structured generation](https://runpod.io/console/gpu-cloud?template=4urlqq7olr&ref=jmfkcdio)
-- [TowerInstruct 13B (multi-lingual Llama 2 fine-tune)](https://runpod.io/console/gpu-cloud?template=xwduaad0fr&ref=jmfkcdio) - needs ~30 GB to run in bf16 (fits on an A6000). Add `--quantize eetq` to run with under 15 GB of VRAM (e.g. A600000).
+- [TowerInstruct 13B (multi-lingual Llama 2 fine-tune)](https://runpod.io/console/gpu-cloud?template=xwduaad0fr&ref=jmfkcdio) - needs ~30 GB to run in bf16 (fits on an A6000). Add `--quantize eetq` to run with under 15 GB of VRAM (e.g. A6000).
 - [Yi 34B Chat - fits in 16-bit on an A100](https://runpod.io/console/gpu-cloud?template=hd35vhie4f&ref=jmfkcdio)
 - [Gemma Chat 9B](https://runpod.io/console/gpu-cloud?template=ivkssv2y93&ref=jmfkcdio).
 - [Notux 8x7B AWQ](https://runpod.io/gsc?template=qyhee1k9wx&ref=jmfkcdio). Requires an A6000 or A100 or H100.
