@@ -31,7 +31,7 @@ For best reliability around CUDA versions, I recommend:
 - All offer openai style endpoints.
 
 ### SGLang (from lmsys)
-- [Llama 3.1 Instruct 8B](https://runpod.io/console/deploy?template=egumitbrf3&ref=jmfkcdio), [Llama 3.1 Instruct 70B](https://runpod.io/console/deploy?template=s51eiwrmif&ref=jmfkcdio), [Llama 3.1 Instruct FP8 405B](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio)
+- [Llama 3.1 Instruct 8B FP8](https://runpod.io/console/deploy?template=egumitbrf3&ref=jmfkcdio), [Llama 3.1 Instruct 70B FP8](https://runpod.io/console/deploy?template=s51eiwrmif&ref=jmfkcdio), [Llama 3.1 Instruct 70B INT4](https://runpod.io/console/deploy?template=xi0o9zze83&ref=jmfkcdio), [Llama 3.1 Instruct 405B FP8](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio), [Llama 3.1 Instruct 405B INT4](https://runpod.io/console/deploy?template=sn9qk811g5&ref=jmfkcdio)
 
 ### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
 Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, leading to issues on certain pods. A6000 Ada is typically an option that works.
@@ -49,6 +49,7 @@ Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, 
 > Note: vLLM runs into issues sometimes if the pod template does not have the correct CUDA drivers. Unfortunately there is no way to know when picking a GPU. An issue has been raised [here](https://github.com/vllm-project/vllm/issues/2393). As an alternative, you can run TGI (and even query in openai style, guide [here](https://github.com/huggingface/text-generation-inference/commit/0eabc83541225979209ff7183b4b4442e47adf92#diff-5b4ec6c8005e6b142ac974571bb8dc557a9bb7ab7c3d0b09554dfc9cc50dcf0b)). TGI is faster than vLLM and recommended in general. Note however, that TGI does not automatically apply the chat template to the prompt when using the OpenAI style endpoint.
 
 ### Text Generation Inference:
+- [Llama 3.1 8B](https://runpod.io/console/deploy?template=mwb88n0pu0&ref=jmfkcdio)
 - [IDEFICS 2 8B multi-modal](https://runpod.io/console/deploy?template=d2tjii83ba&ref=jmfkcdio)
 - [Llama 3 - 8B Instruct](https://runpod.io/console/deploy?template=qlkldvr7ys&ref=jmfkcdio)
 - [Llama 3 - 70B Instruct](https://runpod.io/console/deploy?template=qlkldvr7ys&ref=jmfkcdio)
