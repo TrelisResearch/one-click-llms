@@ -31,7 +31,7 @@ For best reliability around CUDA versions, I recommend:
 - All offer openai style endpoints.
 
 ### SGLang (from lmsys)
-- [Llama 3.1 Instruct 8B FP8](https://runpod.io/console/deploy?template=egumitbrf3&ref=jmfkcdio), [Llama 3.1 Instruct 70B FP8](https://runpod.io/console/deploy?template=s51eiwrmif&ref=jmfkcdio), [Llama 3.1 Instruct 70B INT4](https://runpod.io/console/deploy?template=xi0o9zze83&ref=jmfkcdio), [Llama 3.1 Instruct 405B FP8](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio), [Llama 3.1 Instruct 405B INT4](https://runpod.io/console/deploy?template=sn9qk811g5&ref=jmfkcdio)
+- [Llama 3.1 Instruct 8B FP8](https://runpod.io/console/deploy?template=egumitbrf3&ref=jmfkcdio), [Llama 3.1 Instruct 70B FP8](https://runpod.io/console/deploy?template=s51eiwrmif&ref=jmfkcdio), [Llama 3.1 Instruct 70B INT4](https://runpod.io/console/deploy?template=y7meeekjja&ref=jmfkcdio), [Llama 3.1 Instruct 405B FP8](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio), [Llama 3.1 Instruct 405B INT4](https://runpod.io/console/deploy?template=sn9qk811g5&ref=jmfkcdio)
 
 ### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
 Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, leading to issues on certain pods. A6000 Ada is typically an option that works.
