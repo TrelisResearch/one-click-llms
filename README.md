@@ -68,6 +68,10 @@ Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, 
 - [Deepseek Coder 33B Template](https://runpod.io/gsc?template=51tpe9tqk2&ref=jmfkcdio).
 - [Medusa Vicuna](https://runpod.io/gsc?template=2xpg09eenv&ref=jmfkcdio) (high speed speculative decoding - mostly a glamour template because OpenChat with AWQ is better quality and faster)
 
+### Nvidia NIM
+- [Llama 3.1 8B](https://runpod.io/console/deploy?template=iyvm48jw77&ref=jmfkcdio)
+- [Llama 3.1 70B](https://runpod.io/console/deploy?template=xi0o9zze83&ref=jmfkcdio)
+
 ### llama.cpp One-click templates:
 - [Mistral Nemo Instruct - pending llama cpp support](https://runpod.io/console/deploy?template=dmefdk27fl&ref=jmfkcdio)
 - [Mistral 7B Instruct v0.2 8-bit](https://runpod.io/gsc?template=4g0fj4rh32&ref=jmfkcdio)
