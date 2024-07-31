@@ -73,6 +73,7 @@ Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, 
 - [Llama 3.1 70B](https://runpod.io/console/deploy?template=xi0o9zze83&ref=jmfkcdio)
 
 ### llama.cpp One-click templates:
+- [Llama 3.1 8B - 4_K_M](https://runpod.io/console/deploy?template=9aqe40bsts&ref=jmfkcdio)
 - [Mistral Nemo Instruct - pending llama cpp support](https://runpod.io/console/deploy?template=dmefdk27fl&ref=jmfkcdio)
 - [Mistral 7B Instruct v0.2 8-bit](https://runpod.io/gsc?template=4g0fj4rh32&ref=jmfkcdio)
 
