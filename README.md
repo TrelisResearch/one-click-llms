@@ -80,6 +80,9 @@ Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, 
 ### MoonDream Multi-modal API (openai-ish)
 - [Moondream2 - a small but accurate model for querying images](https://runpod.io/console/deploy?template=0m232edqmj&ref=jmfkcdio)
 
+### HuggingFace Speech-to-Speech
+- [Combined voice-detection, speech to text, text to text, text to speech model](https://runpod.io/console/deploy?template=xen5lu2cuf&ref=jmfkcdio)
+
 ## Vast AI One-Click Templates
 > [!TIP]
 > To support the Trelis Research YouTube channel, you can sign up for an account with [this affiliate link](https://cloud.vast.ai/?ref_id=98762). Trelis is supported by a commission when you use one-click templates.
@@ -99,6 +102,9 @@ Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, 
 
 ## Function-calling One-Click Templates
 One-click templates for function-calling are located on the HuggingFace model cards. Check out the collection [here](https://huggingface.co/collections/Trelis/function-calling-v3-657199ecbe378693925c7915).
+
+### HuggingFace Speech-to-Speech
+- [Combined voice-detection, speech to text, text to text, text to speech model](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=HuggingFace%20Speech-to-Speech%20Server%20by%20Trelis)
 
 > [!TIP]
 > As of July 23rd 2024, function calling fine-tuned models are being deprecated in favour of a one-shot approach with stronger models. Find the "Tool Use" video on the [Trelis YouTube Channel](https://youtube.com/@trelisresearch/) for more info.
