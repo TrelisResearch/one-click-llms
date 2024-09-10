@@ -6,20 +6,16 @@
 > Advanced inferencing scripts (incl. for function calling, data extraction, advanced RAG methods, and private data redaction) are available for purchase [here](https://trelis.com/enterprise-server-api-and-inference-guide/).
 
 These one click templates allow you to quickly boot up an API for a given language model.
-
 - Read through the README file on the templates!
-- Runpod is recommended (better user interface) if using larger GPUs like A6000, A100 or H100.
-- Vast.AI is recommended for lowest cost per hour with smaller GPUs like A6000 and A2000. However, the user experience is significantly worse with Vast.AI than runpod.
+
+GPU Choices and Tips (last updated Sept 10 2024):
+1. VALUE and best UI: A40 on [Runpod](https://runpod.io?ref=jmfkcdio) (48 GB VRAM) ~$0.39/hr.
+2. Higher VRAM: A100 SXM (80 GB VRAM) on [Vast.AI](https://cloud.vast.ai/?ref_id=98762) ~$0.80/hr.
+3. Higher Speed: H100 PCI or SXM (80 GB VRAM) - best for fp8 models, but expensive.
 
 ## Runpod One-Click Templates
 > [!TIP]
 > To support the Trelis Research YouTube channel, you can sign up for an account with [this link](https://runpod.io?ref=jmfkcdio). Trelis is supported by a commission when you use one-click templates.
-
-### GPU Choices and Tips
-For best reliability around CUDA versions, I recommend:
-- A6000 (48 GB VRAM), cheapest.
-- A100 SXM (more expensive than PCI but more reliably has up to date CUDA).
-- H100 PCI or SXM - best for fp8 models, but expensive.
 
 ### Fine-tuning Notebook Setup
 - CUDA 12.1 one-click template [here](https://runpod.io/gsc?template=ifyqsvjlzj&ref=jmfkcdio)
