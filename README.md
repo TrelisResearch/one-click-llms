@@ -62,7 +62,7 @@ Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, 
 - [Notux 8x7B AWQ](https://runpod.io/gsc?template=qyhee1k9wx&ref=jmfkcdio). Requires an A6000 or A100 or H100.
 - [CodeLlama 70B Instruct - 4bit AWQ](https://runpod.io/gsc?template=ze563fijpz&ref=jmfkcdio), [CodeLlama 70B Instruct - 4bit bitsandbytes](https://runpod.io/gsc?template=vrjiai47o0&ref=jmfkcdio). Requires an A6000 or A100 or H100.
 - [Mamba Instruct OpenHermes](https://runpod.io/gsc?template=58bjvimzec&ref=jmfkcdio)
-- [Llama 70B API by TrelisResearch](https://runpod.io/gsc?template=6e9yxszwne&ref=jmfkcdio).
+- [Llama 70B API by TrelisResearch - DEPRECATED  - USE LLAMA 3.1 TEMPLATES].
 - [Deepseek Coder 33B Template](https://runpod.io/gsc?template=51tpe9tqk2&ref=jmfkcdio).
 - [Medusa Vicuna](https://runpod.io/gsc?template=2xpg09eenv&ref=jmfkcdio) (high speed speculative decoding - mostly a glamour template because OpenChat with AWQ is better quality and faster)
 
