@@ -1,35 +1,35 @@
 # one-click-llms
 > [!TIP]
 > Post a new issue if you would like other templates.
+Quickly boot up an API endpoint for a given language, vision or speech/transcription model.
 
-> [!TIP]
-> Advanced inferencing scripts (incl. for function calling, data extraction, advanced RAG methods, and private data redaction) are available for purchase [here](https://trelis.com/enterprise-server-api-and-inference-guide/).
-
-These one click templates allow you to quickly boot up an API for a given language model.
-- Read through the README file on the templates!
-
-GPU Choices and Tips (last updated Sept 10 2024):
-1. VALUE and best UI: A40 on [Runpod](https://runpod.io?ref=jmfkcdio) (48 GB VRAM) ~$0.39/hr.
-2. Higher VRAM: A100 SXM (80 GB VRAM) on [Vast.AI](https://cloud.vast.ai/?ref_id=98762) ~$0.80/hr.
-3. Higher Speed: H100 PCI or SXM (80 GB VRAM) - best for fp8 models, but expensive.
+Built by Trelis Research [YouTube](https://Youtube.com/@TrelisResearch), [Newsletter](blog.trelis.com), [Inferencing Scripts](https://trelis.com/enterprise-server-api-and-inference-guide/)
 
 ## Runpod One-Click Templates
 > [!TIP]
 > To support the Trelis Research YouTube channel, you can sign up for an account with [this link](https://runpod.io?ref=jmfkcdio). Trelis is supported by a commission when you use one-click templates.
 
+GPU Choices/Recommendations (last updated Oct 15 2024):
+1. VALUE and best UI: A40 on [Runpod](https://runpod.io?ref=jmfkcdio) (48 GB VRAM) ~$0.39/hr.
+2. Higher Speed: H100 PCI or SXM (80 GB VRAM) - best for fp8 models, but expensive.
+
 ### Fine-tuning Notebook Setup
 - CUDA 12.1 one-click template [here](https://runpod.io/gsc?template=ifyqsvjlzj&ref=jmfkcdio)
 
-### Inference Engines (vLLM, TGI, Nvidia NIM or SGLang)
-- SGLang is the fastest across all batch sizes.
-- Nvidia NIM (paid service from Nvidia) is a bit slower than SGLang.
-- vLLM and TGI are close on speed for small batches.
-- All offer openai style endpoints.
+### Inference Engines
+- [Transcription] Faster Whisper Server (Transcription only)
+- [LLMs] SGLang is the fastest across all batch sizes.
+- [LLMs and Multi-modal LLMs] vLLM and TGI are close on speed for small batches.
+- [Multi-modal LLM] Moondream API (tiny vision + text language model).
+- [LLMs] Nvidia NIM (paid service from Nvidia): a bit slower than SGLang. Also inconvenient to use as it requires login.
 
-### SGLang (from lmsys)
+#### Faster Whisper
+- [Whisper, incl. Turbo](https://runpod.io/console/deploy?template=v7xyt1e57i&ref=jmfkcdio)
+
+#### SGLang (from lmsys)
 - [Llama 3.1 Instruct 8B FP8](https://runpod.io/console/deploy?template=egumitbrf3&ref=jmfkcdio), [Llama 3.1 Instruct 70B FP8](https://runpod.io/console/deploy?template=s51eiwrmif&ref=jmfkcdio), [Llama 3.1 Instruct 70B INT4](https://runpod.io/console/deploy?template=y7meeekjja&ref=jmfkcdio), [Llama 3.1 Instruct 405B FP8](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio), [Llama 3.1 Instruct 405B INT4](https://runpod.io/console/deploy?template=sn9qk811g5&ref=jmfkcdio)
 
-### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
+#### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
 Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, leading to issues on certain pods. A6000 Ada is typically an option that works.
 - [Llama 3.2 Vision](https://runpod.io/console/deploy?template=ejpb432goj&ref=jmfkcdio)
 - [Pixtral](https://runpod.io/console/deploy?template=78dbz10el3&ref=jmfkcdio)
@@ -46,7 +46,7 @@ Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, 
 > [!IMPORTANT]
 > Note: vLLM runs into issues sometimes if the pod template does not have the correct CUDA drivers. Unfortunately there is no way to know when picking a GPU. An issue has been raised [here](https://github.com/vllm-project/vllm/issues/2393). As an alternative, you can run TGI (and even query in openai style, guide [here](https://github.com/huggingface/text-generation-inference/commit/0eabc83541225979209ff7183b4b4442e47adf92#diff-5b4ec6c8005e6b142ac974571bb8dc557a9bb7ab7c3d0b09554dfc9cc50dcf0b)). TGI is faster than vLLM and recommended in general. Note however, that TGI does not automatically apply the chat template to the prompt when using the OpenAI style endpoint.
 
-### Text Generation Inference:
+#### Text Generation Inference:
 - [Llama 3.1 8B](https://runpod.io/console/deploy?template=mwb88n0pu0&ref=jmfkcdio)
 - [IDEFICS 2 8B multi-modal](https://runpod.io/console/deploy?template=d2tjii83ba&ref=jmfkcdio)
 - [Llama 3 - 8B Instruct](https://runpod.io/console/deploy?template=qlkldvr7ys&ref=jmfkcdio)
@@ -66,48 +66,29 @@ Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, 
 - [Deepseek Coder 33B Template](https://runpod.io/gsc?template=51tpe9tqk2&ref=jmfkcdio).
 - [Medusa Vicuna](https://runpod.io/gsc?template=2xpg09eenv&ref=jmfkcdio) (high speed speculative decoding - mostly a glamour template because OpenChat with AWQ is better quality and faster)
 
-### Nvidia NIM
-- [Llama 3.1 8B](https://runpod.io/console/deploy?template=iyvm48jw77&ref=jmfkcdio)
-- [Llama 3.1 70B](https://runpod.io/console/deploy?template=xi0o9zze83&ref=jmfkcdio)
-
-### llama.cpp One-click templates:
+#### llama.cpp One-click templates:
 - [Llama 3.1 8B - 4_K_M](https://runpod.io/console/deploy?template=9aqe40bsts&ref=jmfkcdio)
 - [Mistral Nemo Instruct - pending llama cpp support](https://runpod.io/console/deploy?template=dmefdk27fl&ref=jmfkcdio)
 - [Mistral 7B Instruct v0.2 8-bit](https://runpod.io/gsc?template=4g0fj4rh32&ref=jmfkcdio)
 
-### MoonDream Multi-modal API (openai-ish)
+#### Nvidia NIM
+- [Llama 3.1 8B](https://runpod.io/console/deploy?template=iyvm48jw77&ref=jmfkcdio)
+- [Llama 3.1 70B](https://runpod.io/console/deploy?template=xi0o9zze83&ref=jmfkcdio)
+
+#### MoonDream Multi-modal API (openai-ish)
 - [Moondream2 - a small but accurate model for querying images](https://runpod.io/console/deploy?template=0m232edqmj&ref=jmfkcdio)
 
-### HuggingFace Speech-to-Speech
+#### HuggingFace Speech-to-Speech
 - [Combined voice-detection, speech to text, text to text, text to speech model](https://runpod.io/console/deploy?template=xen5lu2cuf&ref=jmfkcdio)
-
-## Vast AI One-Click Templates
-> [!TIP]
-> To support the Trelis Research YouTube channel, you can sign up for an account with [this affiliate link](https://cloud.vast.ai/?ref_id=98762). Trelis is supported by a commission when you use one-click templates.
-
-### Fine-tuning Notebook Setup
-- CUDA 12.1 one-click template [here](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Fine-tuning%20Notebook%20by%20Trelis%20-%20Cuda%2012.1).
-
-### Text Generation Inference (fastest):
-- [Mistral 7B api](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Mistral-7B%20v0.2%20vLLM%20API)
-
-### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
-- [Mistral 7B v0.2 AWQ](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Mistral%207B%20v0.2%20vLLM%20API)
-- Post a new issue if you would like other templates
-
-### llama.cpp One-click templates:
-- [Mistral 7B Instruct v0.2 8-bit](https://cloud.vast.ai/?ref_id=98762&template_id=bc642dfd6e4c80a1e0807725047588b8)
-
-## Function-calling One-Click Templates
-One-click templates for function-calling are located on the HuggingFace model cards. Check out the collection [here](https://huggingface.co/collections/Trelis/function-calling-v3-657199ecbe378693925c7915).
-
-### HuggingFace Speech-to-Speech
-- [Combined voice-detection, speech to text, text to text, text to speech model](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=HuggingFace%20Speech-to-Speech%20Server%20by%20Trelis)
 
 > [!TIP]
 > As of July 23rd 2024, function calling fine-tuned models are being deprecated in favour of a one-shot approach with stronger models. Find the "Tool Use" video on the [Trelis YouTube Channel](https://youtube.com/@trelisresearch/) for more info.
 
 ## Changelog
+15Oct2024:
+- Add whisper turbo endpoint
+- Deprecate Vast.AI templates.
+
 20Jul2023:
 - Update the ./llama-server.sh command in line with breaking changes to llama.cpp
 
@@ -126,3 +107,27 @@ Dec 30 2023:
 
 Dec 29 2023:
 - Add in one-click llama.cpp server template.
+
+## Vast AI One-Click Templates (DEPRECATED AS OF OCTOBER 15TH 2024).
+> [!TIP]
+> To support the Trelis Research YouTube channel, you can sign up for an account with [this affiliate link](https://cloud.vast.ai/?ref_id=98762). Trelis is supported by a commission when you use one-click templates.
+
+### Fine-tuning Notebook Setup
+- CUDA 12.1 one-click template [here](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Fine-tuning%20Notebook%20by%20Trelis%20-%20Cuda%2012.1).
+
+### Text Generation Inference (fastest):
+- [Mistral 7B api](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Mistral-7B%20v0.2%20vLLM%20API)
+
+### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
+- [Mistral 7B v0.2 AWQ](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=Mistral%207B%20v0.2%20vLLM%20API)
+- Post a new issue if you would like other templates
+
+### llama.cpp One-click templates:
+- [Mistral 7B Instruct v0.2 8-bit](https://cloud.vast.ai/?ref_id=98762&template_id=bc642dfd6e4c80a1e0807725047588b8)
+
+### Function-calling One-Click Templates
+One-click templates for function-calling are located on the HuggingFace model cards. Check out the collection [here](https://huggingface.co/collections/Trelis/function-calling-v3-657199ecbe378693925c7915).
+
+### HuggingFace Speech-to-Speech
+- [Combined voice-detection, speech to text, text to text, text to speech model](https://cloud.vast.ai/?ref_id=98762&creator_id=98762&name=HuggingFace%20Speech-to-Speech%20Server%20by%20Trelis)
+
