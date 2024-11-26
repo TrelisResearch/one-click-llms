@@ -32,6 +32,7 @@ GPU Choices/Recommendations (last updated Oct 15 2024):
 
 #### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
 Note: The vLLM image has compatibility issues with certain Runpod CUDA drivers, leading to issues on certain pods. A6000 Ada is typically an option that works.
+- [Qwen 2 Audio 7B](https://runpod.io/console/deploy?template=7nfkxpzhcn&ref=jmfkcdio)
 - [Qwen 2 VL 2B](https://runpod.io/console/deploy?template=gf96yn5wjb&ref=jmfkcdio), [Qwen 2 VL 7B](https://runpod.io/console/deploy?template=3dwi64mha8&ref=jmfkcdio), [Qwen 2 VL 70B](https://runpod.io/console/deploy?template=fnpg1ra9ln&ref=jmfkcdio)
 - [Llama 3.2 Vision](https://runpod.io/console/deploy?template=ejpb432goj&ref=jmfkcdio)
 - [Pixtral](https://runpod.io/console/deploy?template=78dbz10el3&ref=jmfkcdio)
