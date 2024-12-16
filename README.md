@@ -31,6 +31,7 @@ GPU Choices/Recommendations (last updated Oct 15 2024):
 - [Llama 3.1 Instruct 8B FP8](https://runpod.io/console/deploy?template=egumitbrf3&ref=jmfkcdio), [Llama 3.1 Instruct 70B FP8](https://runpod.io/console/deploy?template=s51eiwrmif&ref=jmfkcdio), [Llama 3.1 Instruct 70B INT4](https://runpod.io/console/deploy?template=y7meeekjja&ref=jmfkcdio), [Llama 3.1 Instruct 405B FP8](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio), [Llama 3.1 Instruct 405B INT4](https://runpod.io/console/deploy?template=sn9qk811g5&ref=jmfkcdio)
 
 #### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
+- [Llama 3.1 8B multi-lora server](https://runpod.io/console/deploy?template=p4l5qvim7s&ref=jmfkcdio)
 - [Llama 3.3 70B in fp8](https://runpod.io/console/deploy?template=wlh8cgobkq&ref=jmfkcdio).
 - Phi 4: [fp8 - Runs at ~32 toks on an A40](https://runpod.io/console/deploy?template=rzgcdh9rqe&ref=jmfkcdio). [bf16 Runs at ~17 toks on an A40](https://runpod.io/console/deploy?template=wlh8cgobkq&ref=jmfkcdio). 
 - [Qwen 2 Audio 7B](https://runpod.io/console/deploy?template=7nfkxpzhcn&ref=jmfkcdio)
