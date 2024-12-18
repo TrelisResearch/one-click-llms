@@ -1,6 +1,7 @@
 # one-click-llms
 > [!TIP]
 > Post a new issue if you would like other templates.
+> NEW: You can now run on an AMD MI300X - see SGLang below!
 Quickly boot up an API endpoint for a given language, vision or speech/transcription model.
 
 Built by Trelis Research [YouTube](https://Youtube.com/@TrelisResearch), [Newsletter](blog.trelis.com), [Inferencing Scripts](https://trelis.com/enterprise-server-api-and-inference-guide/)
@@ -27,6 +28,7 @@ GPU Choices/Recommendations (last updated Oct 15 2024):
 - [Whisper, incl. Turbo](https://runpod.io/console/deploy?template=v7xyt1e57i&ref=jmfkcdio)
 
 #### SGLang (from lmsys)
+- [Llama 3.1 Instruct 8B FP8 - ROCM/AMD](https://runpod.io/console/deploy?template=fngusf3aep&ref=jmfkcdio)
 - [Qwen 2.5 Coder 32B](https://runpod.io/console/deploy?template=bxj0eugbk5&ref=jmfkcdio)
 - [Llama 3.1 Instruct 8B FP8](https://runpod.io/console/deploy?template=egumitbrf3&ref=jmfkcdio), [Llama 3.1 Instruct 70B FP8](https://runpod.io/console/deploy?template=s51eiwrmif&ref=jmfkcdio), [Llama 3.1 Instruct 70B INT4](https://runpod.io/console/deploy?template=y7meeekjja&ref=jmfkcdio), [Llama 3.1 Instruct 405B FP8](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio), [Llama 3.1 Instruct 405B INT4](https://runpod.io/console/deploy?template=sn9qk811g5&ref=jmfkcdio)
 
