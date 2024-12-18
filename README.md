@@ -1,7 +1,9 @@
 # one-click-llms
 > [!TIP]
-> Post a new issue if you would like other templates.
 > NEW: You can now run on an AMD MI300X - see SGLang below!
+
+> [!TIP]
+> Post a new issue if you would like other templates.
 Quickly boot up an API endpoint for a given language, vision or speech/transcription model.
 
 Built by Trelis Research [YouTube](https://Youtube.com/@TrelisResearch), [Newsletter](blog.trelis.com), [Inferencing Scripts](https://trelis.com/enterprise-server-api-and-inference-guide/)
