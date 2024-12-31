@@ -1,6 +1,7 @@
 # one-click-llms
 > [!TIP]
-> NEW: You can now run on an AMD MI300X - see SGLang below!
+> Deepseek v3 and Llama 3.3 70B are now supported.
+> NEW: You can also now run on an AMD MI300X - see SGLang below!
 
 > [!TIP]
 > Post a new issue if you would like other templates.
@@ -30,6 +31,8 @@ GPU Choices/Recommendations (last updated Oct 15 2024):
 - [Whisper, incl. Turbo](https://runpod.io/console/deploy?template=v7xyt1e57i&ref=jmfkcdio)
 
 #### SGLang (from lmsys)
+- [Deepseek v3 FP8 - Nvidia](https://runpod.io/console/deploy?template=9u3ytxvqdj&ref=jmfkcdio) - WARNING: takes ~30 mins to download + load shards onto 8X H100 (~140 GB). Should also work on 8X H200 (~140 GB) and allow for longer context.
+- [Deepseek v3 FP8 - ROCM/AMD](https://runpod.io/console/deploy?template=xxarh523m5&ref=jmfkcdio) - WARNING - not validated yet as working. Takes ~1-1.5 hours to download + load shards onto 8X MI300X. Gives ~ toks.
 - [Llama 3.1 Instruct 8B FP8 - ROCM/AMD](https://runpod.io/console/deploy?template=fngusf3aep&ref=jmfkcdio)
 - [Qwen 2.5 Coder 32B](https://runpod.io/console/deploy?template=bxj0eugbk5&ref=jmfkcdio)
 - [Llama 3.1 Instruct 8B FP8](https://runpod.io/console/deploy?template=egumitbrf3&ref=jmfkcdio), [Llama 3.1 Instruct 70B FP8](https://runpod.io/console/deploy?template=s51eiwrmif&ref=jmfkcdio), [Llama 3.1 Instruct 70B INT4](https://runpod.io/console/deploy?template=y7meeekjja&ref=jmfkcdio), [Llama 3.1 Instruct 405B FP8](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio), [Llama 3.1 Instruct 405B INT4](https://runpod.io/console/deploy?template=sn9qk811g5&ref=jmfkcdio)
