@@ -59,7 +59,8 @@ git clone https://github.com/ggerganov/llama.cpp
 
 # Change directory to llama.cpp and build the project with make
 cd llama.cpp
-make -j 16 GGML_CUDA=1
+cmake -B build -DGGML_CUDA=ON
+cmake --build build --config Release -- -j 16
 
 cd ../
 
@@ -81,7 +82,7 @@ fi
 actual_context_length=$(($context_length * $num_parallel_threads))
 
 # Build the command with the -ngl flag
-command="./llama.cpp/llama-server -m ${cached_file_path} -np ${num_parallel_threads} -cb -c ${actual_context_length} --port 8080 --host 0.0.0.0 -ngl 100"
+command="./llama.cpp/build/bin/llama-server -m ${cached_file_path} -np ${num_parallel_threads} -cb -c ${actual_context_length} --port 8080 --host 0.0.0.0 -ngl 100"
 echo "Server command: $command"
 
 # Execute the command and output directly to console
