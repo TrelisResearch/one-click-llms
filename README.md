@@ -33,7 +33,7 @@ GPU Choices/Recommendations (last updated Oct 15 2024):
 #### SGLang (from lmsys)
 - [DeepSeek R1 Distill Qwen 1.5B](https://runpod.io/console/deploy?template=wxmkqr598l&ref=jmfkcdio)
 - [Deepseek V2 Lite Chat](https://runpod.io/console/deploy?template=omqvfozjn7&ref=jmfkcdio)
-- [Deepseek v3 FP8 - Nvidia](https://runpod.io/console/deploy?template=9u3ytxvqdj&ref=jmfkcdio) - WARNING: takes ~30 mins to download + load shards onto 8X H100 (~140 GB). Should also work on 8X H200 (~140 GB) and allow for longer context.
+- [Deepseek R1 FP8 - Nvidia](https://runpod.io/console/deploy?template=9u3ytxvqdj&ref=jmfkcdio)
 - [Deepseek R1 FP8 - ROCM/AMD](https://runpod.io/console/deploy?template=xxarh523m5&ref=jmfkcdio) - WARNING - not validated yet as working. Takes ~1-1.5 hours to download + load shards onto 8X MI300X. Gives ~ toks. 
 - [Llama 3.1 Instruct 8B FP8 - ROCM/AMD](https://runpod.io/console/deploy?template=fngusf3aep&ref=jmfkcdio)
 - [Qwen 2.5 Coder 32B](https://runpod.io/console/deploy?template=bxj0eugbk5&ref=jmfkcdio)
