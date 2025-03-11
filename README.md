@@ -31,7 +31,8 @@ GPU Choices/Recommendations (last updated Oct 15 2024):
 - [Whisper, incl. Turbo](https://runpod.io/console/deploy?template=v7xyt1e57i&ref=jmfkcdio)
 
 #### SGLang (from lmsys)
-- [DeepSeek R1 Distill Qwen 1.5B](https://runpod.io/console/deploy?template=wxmkqr598l&ref=jmfkcdio)
+
+- DeepSeek R1 Distill Qwen: [32B](https://runpod.io/console/deploy?template=4bbrlx8ue4&ref=jmfkcdio), [1.5B](https://runpod.io/console/deploy?template=wxmkqr598l&ref=jmfkcdio)
 - [Deepseek V2 Lite Chat](https://runpod.io/console/deploy?template=omqvfozjn7&ref=jmfkcdio)
 - Deepseek R1 FP8 - Nvidia [(single node 8xH200)](https://runpod.io/console/deploy?template=9u3ytxvqdj&ref=jmfkcdio), [(dual node 2x8xH100)](https://runpod.io/console/deploy?template=sjy4afxvqx&ref=jmfkcdio)
 - [Deepseek R1 FP8 - ROCM/AMD](https://runpod.io/console/deploy?template=xxarh523m5&ref=jmfkcdio) - WARNING - not validated yet as working. Takes ~1-1.5 hours to download + load shards onto 8X MI300X. Gives ~ toks. 
