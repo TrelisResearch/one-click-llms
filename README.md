@@ -18,7 +18,10 @@ GPU Choices/Recommendations (last updated Oct 15 2024):
 2. Higher Speed: H100 PCI or SXM (80 GB VRAM) - best for fp8 models, but expensive.
 
 ### Fine-tuning Notebook Setup
-- CUDA 12.1 one-click template [here](https://runpod.io/gsc?template=ifyqsvjlzj&ref=jmfkcdio)
+- CUDA 12.1 one-click template, w/ Jupyter Lab Web Terminal [here](https://runpod.io/gsc?template=ifyqsvjlzj&ref=jmfkcdio) - allows you to run Jupyter Lab inside runpod by default.
+- CUDA 12.1 one-click template, w/ VSCode Web Terminal [here](https://runpod.io/console/deploy?template=epgodh4ed3&ref=jmfkcdio) - allows you to run VSCode in a web terminal (supporting Jupyter Lab, useful if you have issues with widgets within the template above).
+
+Note that you can access pods from either template via SSH, there is no difference there.
 
 ### Inference Engines
 - [Transcription] Faster Whisper Server (Transcription only)
