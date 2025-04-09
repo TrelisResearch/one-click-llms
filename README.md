@@ -1,7 +1,6 @@
 # one-click-llms
 > [!TIP]
-> Deepseek v3 and Llama 3.3 70B are now supported.
-> NEW: You can also now run on an AMD MI300X - see SGLang below!
+> Gemma 3 and Llama 4 Scout are now supported
 
 > [!TIP]
 > Post a new issue if you would like other templates.
