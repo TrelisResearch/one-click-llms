@@ -34,6 +34,7 @@ Note that you can access pods from either template via SSH, there is no differen
 - [Whisper, incl. Turbo](https://runpod.io/console/deploy?template=v7xyt1e57i&ref=jmfkcdio)
 
 #### SGLang (from lmsys)
+- Gemma 3 it [27B FP-8](https://runpod.io/console/deploy?template=e2b4tetdya&ref=jmfkcdio)
 - Llama 4 [Scout, 4xA100 or 4xH100/200 - takes about 15 mins to start](https://runpod.io/console/deploy?template=2d6atsxhzw&ref=jmfkcdio), [Maverick, 8xH100 or 8xH200 - not working yet with docker image](https://runpod.io/console/deploy?template=ubbydr232k&ref=jmfkcdio)
 - DeepSeek R1 Distill Qwen: [32B](https://runpod.io/console/deploy?template=4bbrlx8ue4&ref=jmfkcdio), [1.5B](https://runpod.io/console/deploy?template=wxmkqr598l&ref=jmfkcdio)
 - [Deepseek V2 Lite Chat](https://runpod.io/console/deploy?template=omqvfozjn7&ref=jmfkcdio)
