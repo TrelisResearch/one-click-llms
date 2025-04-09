@@ -34,11 +34,11 @@ Note that you can access pods from either template via SSH, there is no differen
 - [Whisper, incl. Turbo](https://runpod.io/console/deploy?template=v7xyt1e57i&ref=jmfkcdio)
 
 #### SGLang (from lmsys)
-
+- Llama 4 [Scout, 4xA100 or 4xH100/200 - takes about 15 mins to start](https://runpod.io/console/deploy?template=2d6atsxhzw&ref=jmfkcdio), [Maverick, 8xH100 or 8xH200 - not working yet with docker image](https://runpod.io/console/deploy?template=ubbydr232k&ref=jmfkcdio)
 - DeepSeek R1 Distill Qwen: [32B](https://runpod.io/console/deploy?template=4bbrlx8ue4&ref=jmfkcdio), [1.5B](https://runpod.io/console/deploy?template=wxmkqr598l&ref=jmfkcdio)
 - [Deepseek V2 Lite Chat](https://runpod.io/console/deploy?template=omqvfozjn7&ref=jmfkcdio)
 - Deepseek R1 FP8 - Nvidia [(single node 8xH200)](https://runpod.io/console/deploy?template=9u3ytxvqdj&ref=jmfkcdio), [(dual node 2x8xH100)](https://runpod.io/console/deploy?template=sjy4afxvqx&ref=jmfkcdio)
-- [Deepseek R1 FP8 - ROCM/AMD](https://runpod.io/console/deploy?template=xxarh523m5&ref=jmfkcdio) - WARNING - not validated yet as working. Takes ~1-1.5 hours to download + load shards onto 8X MI300X. Gives ~ toks. 
+- [Deepseek R1 FP8 - ROCM/AMD](https://runpod.io/console/deploy?template=xxarh523m5&ref=jmfkcdio) - Takes ~1-1.5 hours to download + load shards onto 8X MI300X.
 - [Llama 3.1 Instruct 8B FP8 - ROCM/AMD](https://runpod.io/console/deploy?template=fngusf3aep&ref=jmfkcdio)
 - [Qwen 2.5 Coder 32B](https://runpod.io/console/deploy?template=bxj0eugbk5&ref=jmfkcdio)
 - [Llama 3.1 Instruct 8B FP8](https://runpod.io/console/deploy?template=egumitbrf3&ref=jmfkcdio), [Llama 3.1 Instruct 70B FP8](https://runpod.io/console/deploy?template=s51eiwrmif&ref=jmfkcdio), [Llama 3.1 Instruct 70B INT4](https://runpod.io/console/deploy?template=y7meeekjja&ref=jmfkcdio), [Llama 3.1 Instruct 405B FP8](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio), [Llama 3.1 Instruct 405B INT4](https://runpod.io/console/deploy?template=sn9qk811g5&ref=jmfkcdio)
