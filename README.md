@@ -1,6 +1,6 @@
 # one-click-llms
 > [!TIP]
-> Gemma 3 and Llama 4 Scout are now supported
+> Qwen3, Gemma 3 and Llama 4 Scout are now supported
 
 > [!TIP]
 > Post a new issue if you would like other templates.
