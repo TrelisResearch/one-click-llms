@@ -33,7 +33,7 @@ Note that you can access pods from either template via SSH, there is no differen
 - [Whisper, incl. Turbo](https://runpod.io/console/deploy?template=v7xyt1e57i&ref=jmfkcdio)
 
 #### SGLang (from lmsys)
-- Qwen 3: [235B-A22B FP8](https://runpod.io/console/deploy?template=9lhiejtvka&ref=jmfkcdio), [32B dense FP8](https://runpod.io/console/deploy?template=8oc6sh1sth&ref=jmfkcdio), [30B-A3B FP8](https://runpod.io/console/deploy?template=i9yhn2ap2v&ref=jmfkcdio). I've only tested the two smaller models so far and they are very slow ~6 toks on 1xH100SXM.
+- Qwen 3: [235B-A22B FP8 - currently stalling on startup](https://runpod.io/console/deploy?template=9lhiejtvka&ref=jmfkcdio), [32B dense FP8](https://runpod.io/console/deploy?template=8oc6sh1sth&ref=jmfkcdio), [30B-A3B FP8](https://runpod.io/console/deploy?template=i9yhn2ap2v&ref=jmfkcdio). Tested on 8xH100SXM (currently stalling, [issue here](https://github.com/sgl-project/sglang/issues/5950)), 1xH100SXM and 1xH100SXM, respectively. Use chat/completions. Reasoning tokens are returned separately. Note that the 30B-A3B is a little worse on performance than the 32B dense, but about 2-3x faster on inference.
 - Gemma 3 it [27B FP-8](https://runpod.io/console/deploy?template=e2b4tetdya&ref=jmfkcdio)
 - Llama 4 [Scout, 4xA100 or 4xH100/200 - takes about 15 mins to start](https://runpod.io/console/deploy?template=2d6atsxhzw&ref=jmfkcdio), [Maverick, 8xH100 or 8xH200 - not working yet with docker image](https://runpod.io/console/deploy?template=ubbydr232k&ref=jmfkcdio)
 - DeepSeek R1 Distill Qwen: [32B](https://runpod.io/console/deploy?template=4bbrlx8ue4&ref=jmfkcdio), [1.5B](https://runpod.io/console/deploy?template=wxmkqr598l&ref=jmfkcdio)
@@ -45,6 +45,7 @@ Note that you can access pods from either template via SSH, there is no differen
 - [Llama 3.1 Instruct 8B FP8](https://runpod.io/console/deploy?template=egumitbrf3&ref=jmfkcdio), [Llama 3.1 Instruct 70B FP8](https://runpod.io/console/deploy?template=s51eiwrmif&ref=jmfkcdio), [Llama 3.1 Instruct 70B INT4](https://runpod.io/console/deploy?template=y7meeekjja&ref=jmfkcdio), [Llama 3.1 Instruct 405B FP8](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio), [Llama 3.1 Instruct 405B INT4](https://runpod.io/console/deploy?template=sn9qk811g5&ref=jmfkcdio)
 
 #### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
+- Qwen 3: [235B-A22B FP8](https://runpod.io/console/deploy?template=9lhiejtvka&ref=jmfkcdio), [32B dense FP8](https://runpod.io/console/deploy?template=sybrm5hsk7&ref=jmfkcdio), [30B-A3B FP8](https://runpod.io/console/deploy?template=y3syp133lq&ref=jmfkcdio). Tested on 8xH100SXM, 1xH100SXM and 1xH100SXM, respectively. Use chat/completions. Reasoning tokens are returned separately. Note that the 30B-A3B is a little worse on performance than the 32B dense, but about 2-3x faster on inference.
 - [Qwen2.5 VL - PENDING SUPPORT](https://runpod.io/console/deploy?template=b3i7t84mco&ref=jmfkcdio)
 - [Llama 3.1 8B multi-lora server](https://runpod.io/console/deploy?template=p4l5qvim7s&ref=jmfkcdio)
 - [Llama 3.3 70B in fp8](https://runpod.io/console/deploy?template=wlh8cgobkq&ref=jmfkcdio).
