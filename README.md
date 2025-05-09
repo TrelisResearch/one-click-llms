@@ -45,6 +45,7 @@ Note that you can access pods from either template via SSH, there is no differen
 - [Llama 3.1 Instruct 8B FP8](https://runpod.io/console/deploy?template=egumitbrf3&ref=jmfkcdio), [Llama 3.1 Instruct 70B FP8](https://runpod.io/console/deploy?template=s51eiwrmif&ref=jmfkcdio), [Llama 3.1 Instruct 70B INT4](https://runpod.io/console/deploy?template=y7meeekjja&ref=jmfkcdio), [Llama 3.1 Instruct 405B FP8](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio), [Llama 3.1 Instruct 405B INT4](https://runpod.io/console/deploy?template=sn9qk811g5&ref=jmfkcdio)
 
 #### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
+- Gemma 3: [27B it (bf16)](https://runpod.io/console/deploy?template=iiiurkp5pw&ref=jmfkcdio)
 - Qwen 3: [235B-A22B FP8](https://runpod.io/console/deploy?template=sb7nue68ax&ref=jmfkcdio), [32B dense FP8](https://runpod.io/console/deploy?template=sybrm5hsk7&ref=jmfkcdio), [30B-A3B FP8](https://runpod.io/console/deploy?template=y3syp133lq&ref=jmfkcdio). Tested on 8xH100SXM, 1xH100SXM and 1xH100SXM, respectively. Use chat/completions. Reasoning tokens are returned separately. Note that the 30B-A3B is a little worse on performance than the 32B dense, but about 2-3x faster on inference.
 - [Qwen2.5 VL - PENDING SUPPORT](https://runpod.io/console/deploy?template=b3i7t84mco&ref=jmfkcdio)
 - [Llama 3.1 8B multi-lora server](https://runpod.io/console/deploy?template=p4l5qvim7s&ref=jmfkcdio)
