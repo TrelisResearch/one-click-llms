@@ -1,6 +1,6 @@
 # one-click-llms
 > [!TIP]
-> Qwen3, Gemma 3 and Llama 4 Scout are now supported
+> Qwen3, Gemma 3 and Llama 4 Scout are now supported. You can also run on blackwell but need to install vllm in the pod (which will take 10 mins, see blackwell.md)
 
 > [!TIP]
 > Post a new issue if you would like other templates.
@@ -105,6 +105,10 @@ Note that you can access pods from either template via SSH, there is no differen
 
 > [!TIP]
 > As of July 23rd 2024, function calling fine-tuned models are being deprecated in favour of a one-shot approach with stronger models. Find the "Tool Use" video on the [Trelis YouTube Channel](https://youtube.com/@trelisresearch/) for more info.
+
+
+## Running Nvidia Blackwell
+See `blackwell.md`
 
 ## Changelog
 15Oct2024:
