@@ -1,6 +1,6 @@
 # one-click-llms
 > [!TIP]
-> DeepSeek v3 0324 is supported, as is Qwen3. So is Orpheus TTS!
+> NEW! OpenAI OSS models now supported! DeepSeek v3 0324 is supported, as is Qwen3. So is Orpheus TTS!
 
 > [!TIP]
 > Post a new issue if you would like other templates.
@@ -45,6 +45,7 @@ Note that you can access pods from either template via SSH, there is no differen
 - [Llama 3.1 Instruct 8B FP8](https://runpod.io/console/deploy?template=egumitbrf3&ref=jmfkcdio), [Llama 3.1 Instruct 70B FP8](https://runpod.io/console/deploy?template=s51eiwrmif&ref=jmfkcdio), [Llama 3.1 Instruct 70B INT4](https://runpod.io/console/deploy?template=y7meeekjja&ref=jmfkcdio), [Llama 3.1 Instruct 405B FP8](https://runpod.io/console/deploy?template=psy8redq4i&ref=jmfkcdio), [Llama 3.1 Instruct 405B INT4](https://runpod.io/console/deploy?template=sn9qk811g5&ref=jmfkcdio)
 
 #### vLLM (requires an A100 or H100 or A6000, i.e. ampere architecture):
+- OpenAI OSS Models: [120B](https://console.runpod.io/deploy?template=ktrh8aelhn&ref=jmfkcdio), [20B](https://console.runpod.io/deploy?template=0lu4un3plu&ref=jmfkcdio) - run on a single H100 SXM.
 - [Orpheus TTS](https://runpod.io/console/deploy?template=wrce975nbo&ref=jmfkcdio)
 - DeepSeek v3 0324: [FP8](https://runpod.io/console/deploy?template=969njfwdwq&ref=jmfkcdio)
 - Gemma 3: [27B it (bf16)](https://runpod.io/console/deploy?template=iiiurkp5pw&ref=jmfkcdio)
