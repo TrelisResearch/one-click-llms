@@ -1,6 +1,6 @@
 # one-click-llms
 > [!TIP]
-> NEW! OpenAI OSS models now supported! DeepSeek v3 0324 is supported, as is Qwen3. So is Orpheus TTS!
+> NEW! Kokoro Voice server now supported. OpenAI OSS models supported! DeepSeek v3 0324 is supported, as is Qwen3. So is Orpheus TTS!
 
 > [!TIP]
 > Post a new issue if you would like other templates.
@@ -29,8 +29,9 @@ Note that you can access pods from either template via SSH, there is no differen
 - [Multi-modal LLM] Moondream API (tiny vision + text language model).
 - [LLMs] Nvidia NIM (paid service from Nvidia): a bit slower than SGLang. Also inconvenient to use as it requires login.
 
-#### Faster Whisper
-- [Whisper, incl. Turbo](https://runpod.io/console/deploy?template=v7xyt1e57i&ref=jmfkcdio)
+#### Voice
+- [Kokoro TTS](https://console.runpod.io/deploy?template=grwfixzu60&ref=jmfkcdio)
+- [Faster Whisper, incl. Turbo](https://runpod.io/console/deploy?template=v7xyt1e57i&ref=jmfkcdio)
 
 #### SGLang (from lmsys)
 - Qwen 3: [235B-A22B FP8 - currently stalling on startup](https://runpod.io/console/deploy?template=9lhiejtvka&ref=jmfkcdio), [32B dense FP8](https://runpod.io/console/deploy?template=8oc6sh1sth&ref=jmfkcdio), [30B-A3B FP8](https://runpod.io/console/deploy?template=i9yhn2ap2v&ref=jmfkcdio). Tested on 8xH100SXM (currently stalling, [issue here](https://github.com/sgl-project/sglang/issues/5950)), 1xH100SXM and 1xH100SXM, respectively. Use chat/completions. Reasoning tokens are returned separately. Note that the 30B-A3B is a little worse on performance than the 32B dense, but about 2-3x faster on inference.
