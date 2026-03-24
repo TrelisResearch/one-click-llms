@@ -10,7 +10,7 @@ Built by Trelis Research [YouTube](https://Youtube.com/@TrelisResearch), [Newsle
 
 ## Runpod One-Click Templates
 > [!TIP]
-> To support the Trelis Research YouTube channel, you can sign up for an account with [this link](https://runpod.io?ref=jmfkcdio). Trelis is supported by a commission when you use one-click templates.
+> To support the Trelis Research YouTube channel, you can sign up for an account with [this link](https://runpod.io?ref=jmfkcdio) to avail of a sign-up bonus. Trelis is then also supported by a commission when you use one-click templates.
 
 GPU Choices/Recommendations (last updated Oct 15 2024):
 1. VALUE and best UI: A40 on [Runpod](https://runpod.io?ref=jmfkcdio) (48 GB VRAM) ~$0.39/hr.
