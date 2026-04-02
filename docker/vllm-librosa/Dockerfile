@@ -1,6 +1,13 @@
 # Use the base image
 FROM vllm/vllm-openai:v0.6.4.post1
 
+# NCCL environment variables for multi-GPU stability
+# Prevents hanging at NCCL initialization on certain hardware configurations
+ENV NCCL_P2P_DISABLE=1
+ENV NCCL_IB_DISABLE=1
+ENV NCCL_DEBUG=WARN
+ENV NCCL_SOCKET_IFNAME=eth0
+
 # Install librosa
 RUN pip install librosa
 
